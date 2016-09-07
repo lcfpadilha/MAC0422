@@ -6,8 +6,7 @@
 /*  Autores: Gustavo Silva e Leonardo Padilha                      */
 /*                                                                 */
 /*******************************************************************/
-
-#include <sys/time.h>
+#include <time.h>
 #include "timer.h"
 
 struct timespec start_timer () {

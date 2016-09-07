@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <pthread.h>
-#include <sys/time.h>
+#include <time.h>
 #include "process.h"
 #include "FCFS.h"
 #include "timer.h"
@@ -37,7 +37,7 @@ static void *arrival (void *args) {
 /*-------------------------Funções públicas-------------------------*/
 void FCFS (FILE *out, char *d) {
     struct timespec t_ini;
-    float total, ini;
+    float total;
     int count = 0;
     pthread_t idA = 0;
     PARAMS *args;
