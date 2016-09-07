@@ -35,8 +35,8 @@ void printLog (int type, char *p1, int line) {
 }
 
 void *func (void *arg) {
-    struct timespec t_last, t_now;
-    float last, now;
+    struct timespec t_last;
+    float fullrem;
     int x;
     PARAMS *args = (PARAMS *) arg;
     PROCESS *run = args->p;
@@ -45,12 +45,12 @@ void *func (void *arg) {
         fprintf (stderr, "Processo %s começou a usar a CPU\n", run->name);
 
     t_last = start_timer();
+    fullrem = run->rem;
     while (run->rem > 0.0) {
-        x++;
         if (run->canRun) {
-            run->rem = run->rem - check_timer(t_last);
+            x++;
+            run->rem = fullrem - check_timer(t_last);
         }
-        t_last = t_now;
     }
 
     if (args->log != NULL) 
