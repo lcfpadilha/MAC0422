@@ -100,7 +100,6 @@ void MFBQ (FILE *out, char *d) {
                         if (q[index]->first->id == -1) {
                             args = malloc (sizeof (PARAMS));
                             args->p     = q[index]->first;
-                            args->log   = d;
                             pthread_create (&q[index]->first->id, NULL, &func, args);
                         }
                         q[index]->first->canRun = TRUE;
@@ -147,7 +146,6 @@ void MFBQ (FILE *out, char *d) {
                 q[0]->rem_quant = QUANTUM;
                 args = malloc (sizeof (PARAMS));
                 args->p     = q[0]->first;
-                args->log   = d;
                 q[0]->t_start = now;
                 pthread_create (&q[0]->first->id, NULL, &func, args);
                 if (d != NULL) {
@@ -188,7 +186,6 @@ void MFBQ (FILE *out, char *d) {
                     if (q[index]->first->id == -1) {
                         args = malloc (sizeof (PARAMS));
                         args->p     = q[index]->first;
-                        args->log   = d;
                         pthread_create (&q[index]->first->id, NULL, &func, args);
                     }
                     q[index]->first->canRun = TRUE;

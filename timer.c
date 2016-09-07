@@ -17,9 +17,14 @@ struct timespec start_timer () {
 
 float check_timer (struct timespec timer) {
     struct timespec now;
-    float timerf, nowf;
     clock_gettime (CLOCK_MONOTONIC, &now);
-    timerf = ((float) timer.tv_sec) + 1e-9 * ((float) timer.tv_nsec);
-    nowf  = ((float) now.tv_sec) + 1e-9 * ((float) now.tv_nsec);
-    return nowf - timerf;
+    return elapsed (now, timer);
+}
+
+float elapsed (struct timespec last, struct timespec ini) {
+    float lastf, inif;
+    lastf = ((float) last.tv_sec) + 1e-9 * ((float) last.tv_nsec);
+    inif  = ((float) ini.tv_sec) + 1e-9 * ((float) ini.tv_nsec);
+
+    return lastf - inif;
 }

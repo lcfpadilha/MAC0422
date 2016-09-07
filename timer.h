@@ -22,4 +22,6 @@ struct timespec start_timer ();
 */
 float check_timer (struct timespec timer);
 
+float elapsed (struct timespec last, struct timespec ini);
+
 #endif

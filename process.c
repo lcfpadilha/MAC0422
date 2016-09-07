@@ -36,20 +36,19 @@ void printLog (int type, char *p1, int line) {
 }
 
 void *func (void *arg) {
-    struct timespec t_last;
-    float fullrem;
-    int x;
+    struct timespec t_now, t_ini;
+    int x = 0;
     PARAMS *args = (PARAMS *) arg;
     PROCESS *run = args->p;
 
-    t_last = start_timer();
-
-    fullrem = run->rem;
+    t_ini = start_timer ();
     while (run->rem > 0.0) {
+        t_now = start_timer ();
         if (run->canRun) {
             x++;
-            run->rem = fullrem - check_timer(t_last);
+            run->rem -= elapsed (t_now, t_ini);
         }
+        t_ini = t_now;
     }
 
     free (arg);
