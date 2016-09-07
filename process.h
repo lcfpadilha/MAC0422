@@ -35,7 +35,6 @@ typedef struct proc {
 
 /* Struct relacionado aos parâmetros da função das threads.        */
 typedef struct readThreadParams {
-    char *log;           /* Ponteiro de log.                        */
     PROCESS *p;          /* Ponteiro para o processo.               */
 } PARAMS;
 

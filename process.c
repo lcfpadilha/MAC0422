@@ -21,9 +21,9 @@ PROCESS *head;
 
 void printLog (int type, char *p1, int line) {
     if (type == CPU_EXIT)
-        fprintf (stderr, "<- Processo %s saindo da CPU.\n", p1);
+        fprintf (stderr, "<- Processo %s saindo da CPU 1.\n", p1);
     else if (type == CPU_ENTER)
-        fprintf (stderr, "-> Processo %s entrando da CPU.\n", p1);
+        fprintf (stderr, "-> Processo %s entrando da CPU 1.\n", p1);
     else if (type == PROC_END) {
         fprintf (stderr, "Finalização de execução do processo %s, ",  p1);
         fprintf (stderr, "escrevendo na linha %d\n", line);
@@ -42,9 +42,6 @@ void *func (void *arg) {
     PARAMS *args = (PARAMS *) arg;
     PROCESS *run = args->p;
 
-    if (args->log != NULL) 
-        fprintf (stderr, "Processo %s começou a usar a CPU\n", run->name);
-
     t_last = start_timer();
 
     fullrem = run->rem;
@@ -54,9 +51,6 @@ void *func (void *arg) {
             run->rem = fullrem - check_timer(t_last);
         }
     }
-
-    if (args->log != NULL) 
-        fprintf (stderr, "Processo %s terminou de usar a CPU\n", run->name);
 
     free (arg);
     pthread_exit (NULL);

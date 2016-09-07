@@ -58,8 +58,7 @@ void FCFS (FILE *out, char *d) {
             /* Deixa o processo ser executado.      */
             p->canRun = TRUE;
             args = malloc (sizeof (PARAMS));
-            args->p     = p;
-            args->log   = d;
+            args->p = p;
             
             if (d != NULL)
                 printLog (2, p->name, 0);

@@ -14,7 +14,7 @@
 #include "process.h"
 #include "SRTN.h"
 
-/*-------------------------Funções privadas------------------------*/
+/*-------------------------Funções privadas------------------------  */
 
 /* sortByRemaining: reordena a lista apontada por head baseada no re-*/
 /*maining time dos processos.                                        */
