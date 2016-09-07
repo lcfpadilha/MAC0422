@@ -12,6 +12,7 @@
 #include <pthread.h>
 #include <sys/time.h>
 #include "process.h"
+#include "timer.h"
 
 /* Lista de processos global. */
 PROCESS *head;
@@ -43,14 +44,11 @@ void *func (void *arg) {
     if (args->log != NULL) 
         fprintf (stderr, "Processo %s começou a usar a CPU\n", run->name);
 
-    clock_gettime (CLOCK_MONOTONIC, &t_last);
+    t_last = start_timer();
     while (run->rem > 0.0) {
         x++;
-        clock_gettime (CLOCK_MONOTONIC, &t_now);
         if (run->canRun) {
-            last = ((float) t_last.tv_sec) + 1e-9 * ((float) t_last.tv_nsec);
-            now  = ((float) t_now.tv_sec) + 1e-9 * ((float) t_now.tv_nsec);
-            run->rem = run->rem - (now - last);
+            run->rem = run->rem - check_timer(t_last);
         }
         t_last = t_now;
     }
