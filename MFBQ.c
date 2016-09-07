@@ -12,6 +12,7 @@
 #include <pthread.h>
 #include <sys/time.h>
 #include "process.h"
+#include "timer.h"
 #include "MFBQ.h"
 
 #define QUANTUM 1.0 
@@ -19,9 +20,9 @@
 
 /* Struct relacionada às filas do escalonamento de multiplas filas. */
 typedef struct queue {
-    float t_start;          /* Último cálculo de tempo da fila.     */
-    float rem_quant;        /* Quantum restante da fila.            */
-    PROCESS *first;         /* Primeiro processo da fila.           */
+    struct timespec t_start; /* Último cálculo de tempo da fila.     */
+    float rem_quant;         /* Quantum restante da fila.            */
+    PROCESS *first;          /* Primeiro processo da fila.           */
 } QUEUE;
 
 /*-------------------------Funções privadas------------------------*/
@@ -47,7 +48,7 @@ static PROCESS *addProcessInQueue (PROCESS *first, PROCESS *new) {
 void MFBQ (FILE *out, char *d) {
     int i, index, actual = NQUEUE - 1, count = 0, context = 0;
     struct timespec t_ini, t_now;
-    float ini, now;
+    float elaps;
     PROCESS *p, *temp;
     PARAMS *args;
     QUEUE *q[NQUEUE];
@@ -60,8 +61,7 @@ void MFBQ (FILE *out, char *d) {
     }
 
     /* Inicio da contagem de tempo.                                 */
-    clock_gettime (CLOCK_MONOTONIC, &t_ini);
-    ini = ((float) t_ini.tv_sec) + 1e-9 * ((float) t_ini.tv_nsec);
+    t_ini = start_timer ();
 
     p = head->next;
 
@@ -69,24 +69,24 @@ void MFBQ (FILE *out, char *d) {
     /*no sistema (ponteiro p) ou processo na fila atual (q[actual]) */
     while (p != NULL || q[actual]->first != NULL) {
         /* Calculo do tempo atual. */
-        clock_gettime (CLOCK_MONOTONIC, &t_now);
-        now = ((float) t_now.tv_sec) + 1e-9 * ((float) t_now.tv_nsec);
+        t_now = start_timer ();
+        elaps = check_timer (t_ini);
 
         /* Primeira chamada do escalonador: verificar se o tempo do */
         /*quantum atual já acabou                                   */
         if (q[actual]->first != NULL) {
             /* Mudando o valor do quantum da fila atual             */
-            q[actual]->rem_quant -= now - q[actual]->t_start;
+            q[actual]->rem_quant -= elapsed(t_now, q[actual]->t_start);
 
             /* Se o tempo do quantum for menor que zero, fazemos a */
             /*troca de contexto.                                   */
-            if (q[actual]->rem_quant < 0.0) {
+            if (q[actual]->rem_quant <= 0.0) {
                 /* Desativmos o processo que está rodando          */
                 q[actual]->first->canRun = FALSE;
-                index = (actual + 1) % NQUEUE;
 
                 /* Mudamos a prioridade do processo que estava ro- */
-                /*dando.                                           */
+                /*dando e o inserimos na fila.                     */
+                index = (actual + 1) % NQUEUE;
                 temp = q[actual]->first;
                 q[actual]->first = q[actual]->first->next;
                 q[index]->first = addProcessInQueue (q[index]->first, temp);
@@ -106,31 +106,37 @@ void MFBQ (FILE *out, char *d) {
                         break;
                     }
                 }
-                /* Alteramos o valor da fila atual.              */
+                /* Alteramos o valor da fila atual e restauramos */
+                /*o quantum.                                     */
                 actual = i % NQUEUE;
                 q[actual]->rem_quant = (actual + 1) * QUANTUM;
 
                 /* Imprimimos a troca de contexto na saída de er-*/
                 /*ro padrão.                                     */
-                if (d != NULL && temp != q[actual]->first) {
-                    printLog (1, temp->name, 0);
-                    printLog (2, q[actual]->first->name, 0);
-                    context++;
+                if (temp != q[actual]->first) {
+                    if (d != NULL) {
+                        if (temp) 
+                            printLog (CPU_EXIT, temp->name, 0);
+                        printLog (CPU_ENTER, q[actual]->first->name, 0);
+                    }
+                    /* Mudança de contexto só ocorre nesse instante */
+                    if (temp) context++;
                 }
             }
-            /* Ultima contagem de tempo da fila.                    */
-            q[actual]->t_start = now;
+            q[actual]->t_start = t_now;
         }
 
         /* Segunda chamada do escalonador: verificar se o próximo   */
         /*processo já pode entrar no sistema                        */
-        if (p != NULL && p->t0 <= now - ini) {
+        if (p != NULL && p->t0 <= elaps) {
             /* Imprimir log na saída de erro                        */
             if (d != NULL)
-                printLog (4, p->name, p->line);
+                printLog (PROC_ARRIVE, p->name, p->line);
+
             /* Desativando o processo que está rodando atualmente.  */
             if (q[actual]->first != NULL)
                 q[actual]->first->canRun = FALSE;
+
             /* Adicionando o processo na fila de maior prioridade.  */
             temp = p->next;
             q[0]->first = addProcessInQueue (q[0]->first, p);
@@ -143,14 +149,16 @@ void MFBQ (FILE *out, char *d) {
                 /*de contexto.                                      */
                 if (q[actual]->first)
                     context++;
+
                 q[0]->rem_quant = QUANTUM;
                 args = malloc (sizeof (PARAMS));
                 args->p     = q[0]->first;
-                q[0]->t_start = now;
+                q[0]->t_start = t_now;
                 pthread_create (&q[0]->first->id, NULL, &func, args);
                 if (d != NULL) {
-                    printLog (1, q[actual]->first->name, 0);
-                    printLog (2, q[0]->first->name, 0);
+                    if (q[actual]->first)
+                        printLog (CPU_EXIT, q[actual]->first->name, 0);
+                    printLog (CPU_ENTER, q[0]->first->name, 0);
                 }
                 actual = 0;
             }
@@ -161,16 +169,16 @@ void MFBQ (FILE *out, char *d) {
 
         /* Terceira chamada do escalonador: verificar se o processo */
         /*que está sendo executado já terminou.                     */
-        if (q[actual]->first != NULL && q[actual]->first->rem <= 0.0) {        
+        if (q[actual]->first != NULL && q[actual]->first->rem <= 1e-10) {        
             pthread_join (q[actual]->first->id, NULL);
             temp = q[actual]->first;
             /* Imprimimos na saida de erro.                         */
             if (d != NULL) {
-                printLog (1, temp->name, 0);
-                printLog (3, temp->name, count++);
+                printLog (CPU_EXIT, temp->name, 0);
+                printLog (PROC_END, temp->name, count++);
             }
             /* Imprimimos o tempo de execução.                      */
-            fprintf(out, "%s %.3f (deadline: %.3f)\n", temp->name, now - ini, temp->deadline);
+            fprintf(out, "%s %.3f (deadline: %.3f)\n", temp->name, elaps, temp->deadline);
 
             /* Avançamos para o próximo processo na fila atual.     */
             q[actual]->first = q[actual]->first->next;
@@ -194,12 +202,12 @@ void MFBQ (FILE *out, char *d) {
             }
 
             /* Atualizamos o valor da fila atual e imprimimos na sa-*/
-            /*ída de erro.                                          */
+            /*ída de erro se houver processo rodando.               */
             actual = i % NQUEUE;
             if (d != NULL && q[actual]->first) 
-                printLog (2, q[actual]->first->name, 0);
+                printLog (CPU_ENTER, q[actual]->first->name, 0);
 
-            q[actual]->t_start = now;
+            q[actual]->t_start = t_now;
             free (temp);
         }
     }

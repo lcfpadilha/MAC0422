@@ -53,7 +53,7 @@ void SRTN (FILE *out, char *d) {
         /*preempção.                                                */
         if (p != NULL && p->t0 <= check_timer (t_ini)) {
             if (d != NULL)
-                printLog (PROC_ARRIVAL, p->name, p->line);
+                printLog (PROC_ARRIVE, p->name, p->line);
 
             /* Desabilita a thread que está ativa. */
             if (ready->next && ready->next->canRun)
@@ -88,7 +88,7 @@ void SRTN (FILE *out, char *d) {
             /* Verifica se houve troca de contexto.                */
             if (older != ready->next) {
                 if (older) {
-                    printLog (CPU_OUT, older->name, 0);
+                    printLog (CPU_EXIT, older->name, 0);
                     context++;
                 }
                 printLog (CPU_ENTER, ready->next->name, 0);
@@ -103,7 +103,7 @@ void SRTN (FILE *out, char *d) {
             pthread_join (ready->next->id, NULL);
 
             if (d != NULL) {
-                printLog (CPU_OUT, ready->next->name, 0);
+                printLog (CPU_EXIT, ready->next->name, 0);
                 printLog (PROC_END, ready->next->name, count++);
             }
 
