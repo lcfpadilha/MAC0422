@@ -1,0 +1,12 @@
+proc0 -> 1 até 2
+|context
+proc1 -> 2 até 4
+proc0 -> 4 até 6
+|context
+proc4 -> 6 até 7
+proc3 -> 7 até 9
+proc6 -> 9 até 11
+proc7 -> 11 até 13
+proc0 -> 13 até 15
+proc2 -> 15 até 20
+proc5 -> 20 até 25 

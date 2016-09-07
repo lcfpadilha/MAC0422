@@ -1,0 +1,129 @@
+1 segundo
+0: *proc0 (5s)
+1:
+2:
+3:
+
+2 segundos
+0: *proc1 (2s)
+1: proc0 (4s)
+2:
+3:
+
+3 segundos
+0: *proc2 (5s)
+1: proc0 (4s) -> proc1 (1s)
+2:
+3:
+
+4 segundos
+0: 
+1: *proc0 (4s) -> proc1 (1s) -> proc2 (4s)
+2:
+3:
+
+6 segundos
+0: *proc3 (2s) -> proc4 (1s)
+1: proc1 (1s) -> proc2 (4s)
+2: proc0 (2s)
+3:
+
+7 segundos
+0: *proc4 (1s)
+1: proc1 (1s) -> proc2 (4s) -> proc3(1s)
+2: proc0 (2s)
+3:
+
+-> Finalizado PROC4
+
+8 segundos
+0: *proc5 (5s)
+1: proc1 (1s) -> proc2 (4s) -> proc3 (1s)
+2: proc0 (2s)
+3:
+
+9 segundos
+0: *proc6 (2s) -> proc7 (2s)
+1: proc1 (1s) -> proc2 (4s) -> proc3 (1s) -> proc5 (4s)
+2: proc0 (2s)
+3:
+
+10 segundos
+0: *proc7 (2s)
+1: proc1 (1s) -> proc2 (4s) -> proc3 (1s) -> proc5 (4s) -> proc6 (1s)
+2: proc0 (2s)
+3:
+
+11 segundos
+0: 
+1: *proc1 (1s) -> proc2 (4s) -> proc3 (1s) -> proc5 (4s) -> proc6 (1s) -> proc7 (1s)
+2: proc0 (2s)
+3:
+
+-> Finalizado PROC1
+
+12 segundos
+0: 
+1: *proc2 (4s) -> proc3 (1s) -> proc5 (4s) -> proc6 (1s) -> proc7 (1s)
+2: proc0 (2s)
+3:
+
+14 segundos
+0: 
+1: *proc3 (1s) -> proc5 (4s) -> proc6 (1s) -> proc7 (1s)
+2: proc0 (2s) -> proc2 (2s)
+3:
+
+-> Finalizado PROC3
+
+15 segundos
+0: 
+1: *proc5 (4s) -> proc6 (1s) -> proc7 (1s)
+2: proc0 (2s) -> proc2 (2s)
+3:
+
+17 segundos
+0: 
+1: *proc6 (1s) -> proc7 (1s)
+2: proc0 (2s) -> proc2 (2s) -> proc5 (2s)
+3:
+
+-> Finalizado PROC6
+
+18 segundos
+0: 
+1: *proc7 (1s)
+2: proc0 (2s) -> proc2 (2s) -> proc5 (2s)
+3:
+
+-> FInalizado PROC7
+
+19 segundos
+0: 
+1: 
+2: *proc0 (2s) -> proc2 (2s) -> proc5 (2s)
+3:
+
+-> Finalizado PROC0
+
+21 segundos
+0: 
+1: 
+2: *proc2 (2s) -> proc5 (2s)
+3:
+
+-> Finalizado PROC2
+
+23 segundos
+0: 
+1: 
+2: *proc5 (2s)
+3:
+
+-> Finalizado PROC5
+
+25 segundos
+0: 
+1: 
+2: 
+3:
