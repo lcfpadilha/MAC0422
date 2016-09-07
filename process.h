@@ -12,6 +12,12 @@
 #define TRUE 1
 #define FALSE 0
 
+/* Codigos da funcao printLog.                                     */
+#define CPU_EXIT 1
+#define CPU_ENTER 2
+#define PROC_END 3
+#define PROC_ARRIVE 4
+
 /* Struct relacionado aos processos.                               */
 typedef struct proc {
     char name[100];    /* Nome do processo.                        */

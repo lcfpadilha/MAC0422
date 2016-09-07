@@ -20,18 +20,19 @@ PROCESS *head;
 /*-------------------------Funções públicas-------------------------*/
 
 void printLog (int type, char *p1, int line) {
-    if (type == 1)
-        fprintf (stderr, "-> Processo %s saindo na CPU.\n", p1);
-    else if (type == 2)
+    if (type == CPU_EXIT)
+        fprintf (stderr, "<- Processo %s saindo da CPU.\n", p1);
+    else if (type == CPU_ENTER)
         fprintf (stderr, "-> Processo %s entrando da CPU.\n", p1);
-    else if (type == 3) {
+    else if (type == PROC_END) {
         fprintf (stderr, "Finalização de execução do processo %s, ",  p1);
         fprintf (stderr, "escrevendo na linha %d\n", line);
     }
-    else if (type == 4) {
+    else if (type == PROC_ARRIVE) {
         fprintf (stderr, "Processo %s da linha %d do trace ", p1, line);
         fprintf (stderr, "chegou no sistema\n");
     }
+
 }
 
 void *func (void *arg) {
@@ -45,6 +46,7 @@ void *func (void *arg) {
         fprintf (stderr, "Processo %s começou a usar a CPU\n", run->name);
 
     t_last = start_timer();
+
     fullrem = run->rem;
     while (run->rem > 0.0) {
         if (run->canRun) {
