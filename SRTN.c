@@ -68,7 +68,7 @@ void SRTN (FILE *out, char *d) {
                e então inserimos p e todos os outros  que entraram
                junto na fila de execução ordenados pelo seu tempo
                remanescente.                                       */
-            while (p != NULL && p->t0 == dt) {
+            while (p != NULL && p->t0 <= dt) {
                 if (d != NULL)
                     printLog (PROC_ARRIVE, p->name, p->line, dt);
                 temp = p->next;
