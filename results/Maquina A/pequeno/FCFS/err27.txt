@@ -1,0 +1,41 @@
+[0.160156] -> Processo proc0 entrando da CPU 1.
+[0.160156] Processo proc0 da linha 0 do trace chegou no sistema
+[1.120117] Processo proc2 da linha 2 do trace chegou no sistema
+[1.610352] Processo proc6 da linha 6 do trace chegou no sistema
+[1.700195] Processo proc4 da linha 4 do trace chegou no sistema
+[2.070312] Processo proc7 da linha 7 do trace chegou no sistema
+[2.210449] Processo proc9 da linha 9 do trace chegou no sistema
+[2.980469] Processo proc5 da linha 5 do trace chegou no sistema
+[2.990234] Processo proc3 da linha 3 do trace chegou no sistema
+[3.550293] Processo proc8 da linha 8 do trace chegou no sistema
+[4.710449] Processo proc1 da linha 1 do trace chegou no sistema
+[0.160156] <- Processo proc0 saindo da CPU 1.
+[0.160156] Finalização de execução do processo proc0, escrevendo na linha 0
+[6.140625] -> Processo proc2 entrando da CPU 1.
+[6.140625] <- Processo proc2 saindo da CPU 1.
+[6.140625] Finalização de execução do processo proc2, escrevendo na linha 1
+[8.410645] -> Processo proc6 entrando da CPU 1.
+[8.410645] <- Processo proc6 saindo da CPU 1.
+[8.410645] Finalização de execução do processo proc6, escrevendo na linha 2
+[10.101074] -> Processo proc4 entrando da CPU 1.
+[10.101074] <- Processo proc4 saindo da CPU 1.
+[10.101074] Finalização de execução do processo proc4, escrevendo na linha 3
+[17.641113] -> Processo proc7 entrando da CPU 1.
+[17.641113] <- Processo proc7 saindo da CPU 1.
+[17.641113] Finalização de execução do processo proc7, escrevendo na linha 4
+[21.271973] -> Processo proc9 entrando da CPU 1.
+[21.271973] <- Processo proc9 saindo da CPU 1.
+[21.271973] Finalização de execução do processo proc9, escrevendo na linha 5
+[24.252441] -> Processo proc5 entrando da CPU 1.
+[24.252441] <- Processo proc5 saindo da CPU 1.
+[24.252441] Finalização de execução do processo proc5, escrevendo na linha 6
+[32.712891] -> Processo proc3 entrando da CPU 1.
+[32.712891] <- Processo proc3 saindo da CPU 1.
+[32.712891] Finalização de execução do processo proc3, escrevendo na linha 7
+[38.393066] -> Processo proc8 entrando da CPU 1.
+[38.393066] <- Processo proc8 saindo da CPU 1.
+[38.393066] Finalização de execução do processo proc8, escrevendo na linha 8
+[47.533203] -> Processo proc1 entrando da CPU 1.
+[47.533203] <- Processo proc1 saindo da CPU 1.
+[47.533203] Finalização de execução do processo proc1, escrevendo na linha 9
+Mudanças de contextos: 0
