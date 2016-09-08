@@ -1,7 +1,7 @@
 /*******************************************************************/
 /*  EP1 de MAC0422 - Sistemas Operacionais                         */
 /*                                                                 */
-/*  Escalonador de processos - arquivo de cabeçalho de timer.c   */
+/*  Escalonador de processos - arquivo de cabeçalho de timer.c     */
 /*                                                                 */         
 /*  Autores: Gustavo Silva e Leonardo Padilha                      */
 /*                                                                 */
@@ -22,6 +22,8 @@ struct timespec start_timer ();
 */
 float check_timer (struct timespec timer);
 
+/* elapsed: recebe um timespec last e um timespec ini e retorna o tem-*/
+/*po decorrido entre os dois.                                           */
 float elapsed (struct timespec last, struct timespec ini);
 
 #endif

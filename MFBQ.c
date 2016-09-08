@@ -46,7 +46,7 @@ static PROCESS *addProcessInQueue (PROCESS *first, PROCESS *new) {
 
 /*-------------------------Funções públicas-------------------------*/
 void MFBQ (FILE *out, char *d) {
-    int i, index, actual = NQUEUE - 1, count = 0, context = 0;
+    int i, index, actual = NQUEUE - 1, count = 0, context = 0, live_count = 0;
     struct timespec t_ini, t_now;
     float elaps;
     PROCESS *p, *temp;
@@ -116,8 +116,8 @@ void MFBQ (FILE *out, char *d) {
                 if (temp != q[actual]->first) {
                     if (d != NULL) {
                         if (temp) 
-                            printLog (CPU_EXIT, temp->name, 0);
-                        printLog (CPU_ENTER, q[actual]->first->name, 0);
+                            printLog (CPU_EXIT, temp->name, 0, elaps);
+                        printLog (CPU_ENTER, q[actual]->first->name, 0, elaps);
                     }
                     /* Mudança de contexto só ocorre nesse instante */
                     if (temp) context++;
@@ -131,7 +131,7 @@ void MFBQ (FILE *out, char *d) {
         if (p != NULL && p->t0 <= elaps) {
             /* Imprimir log na saída de erro                        */
             if (d != NULL)
-                printLog (PROC_ARRIVE, p->name, p->line);
+                printLog (PROC_ARRIVE, p->name, p->line, elaps);
 
             /* Desativando o processo que está rodando atualmente.  */
             if (q[actual]->first != NULL)
@@ -157,8 +157,8 @@ void MFBQ (FILE *out, char *d) {
                 pthread_create (&q[0]->first->id, NULL, &func, args);
                 if (d != NULL) {
                     if (q[actual]->first)
-                        printLog (CPU_EXIT, q[actual]->first->name, 0);
-                    printLog (CPU_ENTER, q[0]->first->name, 0);
+                        printLog (CPU_EXIT, q[actual]->first->name, 0, elaps);
+                    printLog (CPU_ENTER, q[0]->first->name, 0, elaps);
                 }
                 actual = 0;
             }
@@ -174,11 +174,13 @@ void MFBQ (FILE *out, char *d) {
             temp = q[actual]->first;
             /* Imprimimos na saida de erro.                         */
             if (d != NULL) {
-                printLog (CPU_EXIT, temp->name, 0);
-                printLog (PROC_END, temp->name, count++);
+                printLog (CPU_EXIT, temp->name, 0, elaps);
+                printLog (PROC_END, temp->name, count++, elaps);
             }
             /* Imprimimos o tempo de execução.                      */
-            fprintf(out, "%s %.3f (deadline: %.3f)\n", temp->name, elaps, temp->deadline);
+            fprintf(out, "%s %.3f\n", temp->name, elaps);
+
+            if(temp->deadline >= elaps) live_count++;
 
             /* Avançamos para o próximo processo na fila atual.     */
             q[actual]->first = q[actual]->first->next;
@@ -205,7 +207,7 @@ void MFBQ (FILE *out, char *d) {
             /*ída de erro se houver processo rodando.               */
             actual = i % NQUEUE;
             if (d != NULL && q[actual]->first) 
-                printLog (CPU_ENTER, q[actual]->first->name, 0);
+                printLog (CPU_ENTER, q[actual]->first->name, 0, elaps);
 
             q[actual]->t_start = t_now;
             free (temp);
@@ -214,6 +216,7 @@ void MFBQ (FILE *out, char *d) {
 
     /* Imprime a quantidade de mudança de contextos.   */
     fprintf (out, "%d\n", context);
+    printf ("%d %d\n", context, live_count);
     if (d != NULL)
         fprintf (stderr, "Mudanças de contextos: %d\n", context);
 

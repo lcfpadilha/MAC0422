@@ -19,7 +19,8 @@ PROCESS *head;
 
 /*-------------------------Funções públicas-------------------------*/
 
-void printLog (int type, char *p1, int line) {
+void printLog (int type, char *p1, int line, float time) {
+    fprintf (stderr, "[%f] ", time);
     if (type == CPU_EXIT)
         fprintf (stderr, "<- Processo %s saindo da CPU 1.\n", p1);
     else if (type == CPU_ENTER)

@@ -1,0 +1,6 @@
+N = 30 testes
+
+Arquivos de trace:
+t0 = Numero Real aleatório com distribuição Uniforme entre [0 e Numero de processos / 2]
+dt = Numero Real aleatório com distribuição Uniforme entre [0 e 10]
+deadline = Numero Real aleatório com distribuição Uniforme entre [t0 + dt e t0 + dt + 5 * numero de processos]

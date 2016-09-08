@@ -1,9 +1,0 @@
-proc4 8.000 (deadline: 12.000)
-proc1 11.994 (deadline: 21.000)
-proc3 14.998 (deadline: 12.000)
-proc6 17.994 (deadline: 12.000)
-proc7 19.016 (deadline: 12.000)
-proc0 21.016 (deadline: 14.000)
-proc2 23.016 (deadline: 12.000)
-proc5 25.041 (deadline: 12.000)
-13

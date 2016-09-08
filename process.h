@@ -51,15 +51,16 @@ void insertProcess (char *n, float t, float dt, float dl, int line);
 
 /* func: função usada para simulação das threads.                   */
 void *func (void *arg); 
-/* printLog: Recebbe um inteiro type, uma string p1 e um inteiro li-*/
-/*ne. Imprime na saída de erro padrão uma mensagem que depende do   */
-/*valor de type: Se for 1, imprime que o processo de nome p1 está   */
-/*saindo da CPU, se for 2, imprime que o processo de nome p1 está   */
-/*entrando na CPU, se for 3, imprime que o processo de nome p1 ter- */
-/*minou a execução e que o resultado será impresso na linha line e  */
-/*por fim, se type for 4, imprime que o processo p1 que estava na   */
-/*linha line do trace chegou no sistema.                            */
-/*Obs.: Se p1 for NULL, supõe-se que o nome do processo é IDLE.     */
-void printLog (int type, char *p1, int line);
+
+/* printLog: Recebbe um inteiro type, uma string p1, um inteiro li- */
+/*ne e um float time. Imprime na saída de erro padrão uma mensagem  */
+/*que depende do valor de type: Se for 1, imprime que o processo de */
+/*nome p1 está saindo da CPU, se for 2, imprime que o processo de   */
+/*nome p1 está entrando na CPU, se for 3, imprime que o processo de */
+/* nome p1 terminou a execução e que o resultado será impresso na   */
+/*linha line e por fim, se type for 4, imprime que o processo p1 que*/
+/*estava na linha line do trace chegou no sistema. O tempo é exibido*/
+/*em todos os tipos de mensagem.                                    */
+void printLog (int type, char *p1, int line, float time);
 
 #endif

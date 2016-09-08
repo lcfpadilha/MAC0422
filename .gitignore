@@ -1,4 +1,4 @@
 /example
 /teste
-/trace/in
+*.o
 *.pdf

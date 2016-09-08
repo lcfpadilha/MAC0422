@@ -27,7 +27,7 @@ static void *arrival (void *args) {
     while (p != NULL) {
 
         if (p->t0 <= check_timer(t_ini)) {
-            printLog (PROC_ARRIVE, p->name, p->line);
+            printLog (PROC_ARRIVE, p->name, p->line, check_timer(t_ini));
             p = p->next;
         }
     }
@@ -37,8 +37,8 @@ static void *arrival (void *args) {
 /*-------------------------Funções públicas-------------------------*/
 void FCFS (FILE *out, char *d) {
     struct timespec t_ini;
-    float total;
-    int count = 0;
+    float dt, total;
+    int count = 0, live_count = 0;
     pthread_t idA = 0;
     PARAMS *args;
     PROCESS *p, *temp;
@@ -52,16 +52,17 @@ void FCFS (FILE *out, char *d) {
     /* Enquanto houver processo querendo entrar no sistema.     */
     p = head->next;
     while (p != NULL) {
-
+        dt = check_timer(t_ini);
+        
         /* Se o próximo processo chegou no sistema. */
-        if (p->t0 < check_timer(t_ini)) {
+        if (p->t0 < dt) {
             /* Deixa o processo ser executado.      */
             p->canRun = TRUE;
             args = malloc (sizeof (PARAMS));
             args->p = p;
             
             if (d != NULL)
-                printLog (2, p->name, 0);
+                printLog (CPU_ENTER, p->name, 0, dt);
             
             /* Cria-se a thread e espera ela terminar. */
             pthread_create (&p->id, NULL, &func, args);
@@ -73,11 +74,12 @@ void FCFS (FILE *out, char *d) {
             
             /* Mostra o log na saida de erro padrão.   */
             if (d != NULL) {
-                printLog (CPU_EXIT, p->name, 0);
-                printLog (PROC_END, p->name, count++);
+                printLog (CPU_EXIT, p->name, 0, total);
+                printLog (PROC_END, p->name, count++, total);
             }
             /* Imprime o tempo de retorno.             */
-            fprintf(out, "%s %.3f (deadline: %.3f)\n", p->name, total, p->deadline);
+            fprintf(out, "%s %.3f\n", p->name, total);
+            if (p->deadline >= total) live_count++;
             temp = p->next;
             free (p);
             p = temp;
@@ -85,6 +87,8 @@ void FCFS (FILE *out, char *d) {
     }
     /* Imprime a quantidade de mudança de contextos.   */
     fprintf (out, "0\n");
+
+    printf ("0 %d\n", live_count);
 
     if (d) {
         pthread_join (idA, NULL);

@@ -25,9 +25,9 @@ static void sortByRemaining (PROCESS *ini, PROCESS *new) {
     p = ini;
     /*Vamos procurar o ultimo processo da lista que tenha menos rem
       que o processo que quer entrar */
-    while (p->next != NULL && p->next->rem <= new->rem) 
+    while (p->next != NULL && p->next->rem <= new->rem)     
         p = p->next;
-    
+
     /* Adicionamos ele logo em seguida */
     temp = p->next;
     p->next = new;
@@ -36,7 +36,7 @@ static void sortByRemaining (PROCESS *ini, PROCESS *new) {
 
 void SRTN (FILE *out, char *d) { 
     struct timespec t_ini;  
-    int context = 0, traceline = 0; 
+    int context = 0, traceline = 0, live_count = 0; 
     float dt;
     PARAMS *args;                      
     PROCESS *p, *temp, *ready, *old, *running;
@@ -58,10 +58,6 @@ void SRTN (FILE *out, char *d) {
         /* Se tiver um processo p querendo entrar neste momento */
         dt = check_timer(t_ini);
         if (p != NULL && p->t0 <= dt) {
-
-            if (d != NULL)
-                printLog (PROC_ARRIVE, p->name, p->line);
-
             /* Desabilita a thread ativa. */
             if (running && running->canRun)
                 running->canRun = FALSE;
@@ -72,14 +68,15 @@ void SRTN (FILE *out, char *d) {
                e então inserimos p e todos os outros  que entraram
                junto na fila de execução ordenados pelo seu tempo
                remanescente.                                       */
-            while (p != NULL && p->t0 <= dt) {
+            while (p != NULL && p->t0 == dt) {
+                if (d != NULL)
+                    printLog (PROC_ARRIVE, p->name, p->line, dt);
                 temp = p->next;
                 sortByRemaining (ready, p);
                 p = temp;
             }
             /* Ao fim desse while, p já está apontando para o proximo
                processo que vai entrar, daqui a alguns momentos    */
-
 
             /* Depois dessa reorganizaçao, o primeiro da fila ready
                é quem vai ser executado.                           */
@@ -99,10 +96,10 @@ void SRTN (FILE *out, char *d) {
             /* Verifica se houve troca de contexto.                */
             if (old != running) {
                 if (old) {
-                    printLog (CPU_EXIT, old->name, 0);
+                    printLog (CPU_EXIT, old->name, 0, dt);
                     context++;
                 }
-                printLog (CPU_ENTER, ready->next->name, 0);
+                printLog (CPU_ENTER, running->name, 0, dt);
             }
         }
 
@@ -113,16 +110,19 @@ void SRTN (FILE *out, char *d) {
             /* Retiramos ele da CPU, printamos o numero da linha
                dele no trace, e incrementamos esse valor.       */
             if (d != NULL) {
-                printLog (CPU_EXIT, running->name, 0);
-                printLog (PROC_END, running->name, traceline++);
+                printLog (CPU_EXIT, running->name, 0, dt);
+                printLog (PROC_END, running->name, traceline++, dt);
             }
 
             /* Imprime na saida o resultado.                */
-            fprintf(out, "%s %.3f (deadline: %.3f)\n", ready->next->name, check_timer (t_ini), ready->next->deadline);
+            fprintf(out, "%s %.3f\n", running->name, check_timer (t_ini));
+
+            if(running->deadline >= check_timer (t_ini)) live_count++;
 
             /* Avança para o próximo processo na fila ready */
             temp = running;
-            running = running->next;
+            ready->next = running->next;
+            running = ready->next;
 
             /* Verificamos se ele existe. Pode ser que nao tenha ninguem
                na fila, e a CPU fica ociosa.                           */
@@ -134,7 +134,7 @@ void SRTN (FILE *out, char *d) {
                     pthread_create (&running->id, NULL, &func, args);
                 }
                 running->canRun = TRUE;
-                printLog (CPU_ENTER, running->name, 0);
+                printLog (CPU_ENTER, running->name, 0, dt);
             }
             free (temp);
         }
@@ -142,6 +142,7 @@ void SRTN (FILE *out, char *d) {
 
     /* Imprime a quantidade de mudança de contextos.   */
     fprintf (out, "%d\n", context);
+    printf ("%d %d\n", context, live_count);
     if (d != NULL)
         fprintf (stderr, "Mudanças de contextos: %d\n", context);
 

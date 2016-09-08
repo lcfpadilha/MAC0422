@@ -12,10 +12,8 @@
 */
 
 int main (int argc, char** argv) {
-	int i, num, var;
+	int i, num, var1, var2, N;
 	float t0, dt, dl;
-	num = 100;
-	var = 5;
 
 	/* numero de iterações */
 	if(argc > 1) {
@@ -24,14 +22,15 @@ int main (int argc, char** argv) {
 
 	/* variador de intervalo */
 	if(argc > 2) {
-		var = atoi(argv[2]);
+		var1 = atoi(argv[2]);
+		var2 = atoi(argv[3]);
 	}
 
 	srand(time(NULL));
 	for (i = 0; i < num; i++) {
-		t0 = rand() % (20 + var);
-		dt = rand() % (50 + var);
-		dl = t0 + dt + (rand () % (50 + var));
+		t0 = ((float)rand()/(float)(RAND_MAX)) * var1;
+		dt = ((float)rand()/(float)(RAND_MAX)) * var2;
+		dl = t0 + dt + ((float)rand()/(float)(RAND_MAX)) * num;
 		printf ("%.2f proc%d %.2f %.2f\n", t0, i, dt, dl);	
 	}
 	return 0;

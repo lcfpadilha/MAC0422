@@ -1,7 +1,7 @@
 /*******************************************************************/
 /*  EP1 de MAC0422 - Sistemas Operacionais                         */
 /*                                                                 */
-/*  Escalonador de processos - timer.c                           */
+/*  Escalonador de processos - timer.c                             */
 /*                                                                 */         
 /*  Autores: Gustavo Silva e Leonardo Padilha                      */
 /*                                                                 */
