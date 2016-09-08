@@ -39,7 +39,7 @@ void SRTN (FILE *out, char *d) {
     int context = 0, traceline = 0; 
     float dt;
     PARAMS *args;                      
-    PROCESS *p, *q, *temp, *ready, *old, *running;
+    PROCESS *p, *temp, *ready, *old, *running;
 
     /* Cabeça da lista de processos prontos.  (é uma cabeça vazia)   
        O primeiro elemento da lista é o que vai estar rodando.      */
@@ -97,15 +97,9 @@ void SRTN (FILE *out, char *d) {
             running->canRun = TRUE;
 
             /* Verifica se houve troca de contexto.                */
-<<<<<<< HEAD
-            if (older != ready->next) {
-                if (older) {
-                    printLog (CPU_EXIT, older->name, 0);
-=======
             if (old != running) {
                 if (old) {
-                    printLog (CPU_OUT, older->name, 0);
->>>>>>> bafbc4163883828db355e1ada9214b678147799a
+                    printLog (CPU_EXIT, old->name, 0);
                     context++;
                 }
                 printLog (CPU_ENTER, ready->next->name, 0);
@@ -119,13 +113,8 @@ void SRTN (FILE *out, char *d) {
             /* Retiramos ele da CPU, printamos o numero da linha
                dele no trace, e incrementamos esse valor.       */
             if (d != NULL) {
-<<<<<<< HEAD
-                printLog (CPU_EXIT, ready->next->name, 0);
-                printLog (PROC_END, ready->next->name, count++);
-=======
-                printLog (CPU_OUT, running->name, 0);
+                printLog (CPU_EXIT, running->name, 0);
                 printLog (PROC_END, running->name, traceline++);
->>>>>>> bafbc4163883828db355e1ada9214b678147799a
             }
 
             /* Imprime na saida o resultado.                */
