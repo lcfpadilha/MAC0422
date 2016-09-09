@@ -69,6 +69,7 @@ void insertProcess (char *n, float t, float dt, float dl, int line) {
     new->line = line;
     new->rem = dt;
     new->canRun = FALSE;
+    new->priority = 1;
     new->id = -1;
 
     p = head;

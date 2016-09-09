@@ -15,7 +15,7 @@
 #include "process.h"
 #include "FCFS.h"
 #include "SRTN.h"
-#include "MFBQ.h"
+#include "multiple.h"
 
 int main (int argc, char **argv) {
     char *fileIn, *fileOut, *d = NULL, name[100];
@@ -52,7 +52,7 @@ int main (int argc, char **argv) {
     else if (type == 2)
         SRTN (out, d);
     else if (type == 3)
-        MFBQ (out, d);
+        multiple (out, d);
 
     free (head);
     fclose (in);
