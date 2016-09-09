@@ -6,6 +6,8 @@
 /*  Autores: Gustavo Silva e Leonardo Padilha                      */
 /*                                                                 */
 /*******************************************************************/
+#define _GNU_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -21,8 +23,8 @@ PROCESS *head;
 /*-------------------------Funções públicas-------------------------*/
 
 void printLog (int type, char *p1, int line, float time) {
-    fprintf (stderr, "[%f] ", time);
     unsigned int cpu;
+    fprintf (stderr, "[%f] ", time);
     cpu = sched_getcpu();
     if (type == CPU_EXIT)
         fprintf (stderr, "<- Processo %s saindo da CPU %d.\n", p1, cpu);
