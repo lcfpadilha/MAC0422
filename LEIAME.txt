@@ -1,0 +1,12 @@
+Para compilar os códigos-fonte, basta rodar "make".
+
+Para executar, utilize o formato "./ep1 <escalonador> <arquivo de entrada> <arquivo de saida> <debug>" onde: 
+
+-<escalonador> é um número de 1 até 3 identificando o escalonador desejado (FCFS, SRTN ou Múltiplas Filas, respectivamente);
+-<arquivo de entrada> é o arquivo contendo os processos que serão simulados no sistema;
+-<arquivo de saída> é o arquivo onde serão gravadas as informações dos processos executados;
+-<debug> é um parâmetro opcional que, caso exista, fará com que todos os eventos do escalonador sejam impressos na saída de erro. O formato desse parâmetro não importa, pode ser qualquer coisa.
+
+
+
+por Gustavo Silva e Leonardo Padilha
