@@ -49,8 +49,8 @@ void multiple (FILE *out, char *d) {
     start_quant = start_timer ();
 
     /* Simulador irá rodar enquanto houver processo querendo entrar */
-    /*no sistema (ponteiro p) ou processo na fila atual (q[actual]) */
-    while (p != NULL || running != NULL) {
+    /*no sistema (ponteiro p) ou processo na fila ready             */
+    while (p != NULL || ready->next != NULL) {
         /* Calculo do tempo atual. */
         dt = check_timer (t_ini);
 
