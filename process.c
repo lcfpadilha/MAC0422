@@ -11,7 +11,7 @@
 #include <string.h>
 #include <pthread.h>
 #include <time.h>
-#include <linux/getcpu.h>
+#include <sched.h>
 #include "process.h"
 #include "timer.h"
 
@@ -23,7 +23,7 @@ PROCESS *head;
 void printLog (int type, char *p1, int line, float time) {
     fprintf (stderr, "[%f] ", time);
     unsigned int cpu;
-    getcpu(&cpu, NULL, NULL);
+    cpu = sched_getcpu();
     if (type == CPU_EXIT)
         fprintf (stderr, "<- Processo %s saindo da CPU %d.\n", p1, cpu);
     else if (type == CPU_ENTER)
