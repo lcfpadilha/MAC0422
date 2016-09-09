@@ -11,6 +11,7 @@
 #include <string.h>
 #include <pthread.h>
 #include <time.h>
+#include <linux/getcpu.h>
 #include "process.h"
 #include "timer.h"
 
@@ -21,10 +22,12 @@ PROCESS *head;
 
 void printLog (int type, char *p1, int line, float time) {
     fprintf (stderr, "[%f] ", time);
+    unsigned int cpu;
+    getcpu(&cpu, NULL, NULL);
     if (type == CPU_EXIT)
-        fprintf (stderr, "<- Processo %s saindo da CPU 1.\n", p1);
+        fprintf (stderr, "<- Processo %s saindo da CPU %d.\n", p1, cpu);
     else if (type == CPU_ENTER)
-        fprintf (stderr, "-> Processo %s entrando da CPU 1.\n", p1);
+        fprintf (stderr, "-> Processo %s entrando da CPU %d.\n", p1, cpu);
     else if (type == PROC_END) {
         fprintf (stderr, "Finalização de execução do processo %s, ",  p1);
         fprintf (stderr, "escrevendo na linha %d\n", line);
