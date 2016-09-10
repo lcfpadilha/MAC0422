@@ -36,7 +36,7 @@ static void sortByRemaining (PROCESS *ini, PROCESS *new) {
 
 void SRTN (FILE *out, char *d) { 
     struct timespec t_ini;  
-    int context = 0, traceline = 0, live_count = 0; 
+    int context = 0, traceline = 0; 
     float dt;
     PARAMS *args;                      
     PROCESS *p, *temp, *ready, *old, *running;
@@ -115,9 +115,9 @@ void SRTN (FILE *out, char *d) {
             }
 
             /* Imprime na saida o resultado.                */
-            fprintf(out, "%s %.3f\n", running->name, check_timer (t_ini));
+            fprintf(out, "%s %.3f %.3f\n", running->name, check_timer (t_ini), 
+                    check_timer (t_ini) - running->t0);
 
-            if(running->deadline >= check_timer (t_ini)) live_count++;
 
             /* Avança para o próximo processo na fila ready */
             temp = running;
@@ -142,7 +142,6 @@ void SRTN (FILE *out, char *d) {
 
     /* Imprime a quantidade de mudança de contextos.   */
     fprintf (out, "%d\n", context);
-    printf ("%d %d\n", context, live_count);
     if (d != NULL)
         fprintf (stderr, "Mudanças de contextos: %d\n", context);
 

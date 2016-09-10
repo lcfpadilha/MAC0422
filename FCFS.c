@@ -38,7 +38,7 @@ static void *arrival (void *args) {
 void FCFS (FILE *out, char *d) {
     struct timespec t_ini;
     float dt, total;
-    int count = 0, live_count = 0;
+    int count = 0;
     pthread_t idA = 0;
     PARAMS *args;
     PROCESS *p, *temp;
@@ -78,8 +78,7 @@ void FCFS (FILE *out, char *d) {
                 printLog (PROC_END, p->name, count++, total);
             }
             /* Imprime o tempo de retorno.             */
-            fprintf(out, "%s %.3f\n", p->name, total);
-            if (p->deadline >= total) live_count++;
+            fprintf(out, "%s %.3f %.3f\n", p->name, total, total - p->t0);
             temp = p->next;
             free (p);
             p = temp;
@@ -87,8 +86,6 @@ void FCFS (FILE *out, char *d) {
     }
     /* Imprime a quantidade de mudança de contextos.   */
     fprintf (out, "0\n");
-
-    printf ("0 %d\n", live_count);
 
     if (d) {
         pthread_join (idA, NULL);
