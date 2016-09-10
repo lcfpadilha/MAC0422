@@ -29,6 +29,7 @@ typedef struct proc {
     int line;          /* Linha do Trace.                          */
     int canRun;        /* Boolean que diz se a thread pode rodar ou
                           não.                                     */
+    int priority;      /* Prioridade do processo.                  */
     pthread_t id;      /* Identificador da thread criada.          */
     struct proc *next; /* Próximo item da lista.                   */
 } PROCESS;

@@ -1,0 +1,157 @@
+
+1 segundo
+  1
+proc0 
+ 5s
+
+context = 0
+-------------------------------------------------------
+
+2 segundos 
+  1        2
+proc1 -> proc0
+ 2s        4s
+
+context = 1
+-------------------------------------------------------
+
+3 segundos
+  1       2        2
+proc2 -> proc0 -> proc1
+  5s        4s       1s
+
+context = 2
+-------------------------------------------------------
+
+4 segundos
+  2        2        2
+proc0 -> proc1 -> proc2
+  4s       1s       4s
+context = 3
+-------------------------------------------------------
+
+6 segundos
+  1        1        2        2        2
+proc3 -> proc4 -> proc0 -> proc1 -> proc2
+  2s       1s       4s       1s       4s
+
+context = 4
+-------------------------------------------------------
+
+7 segundos
+  1        2        2        2        2
+proc4 -> proc0 -> proc1 -> proc2 -> proc3
+  1s       4s       1s       4s       1s
+
+context = 5
+-------------------------------------------------------
+
+8 segundos
+PROC4 FINALIZADO
+  1        2        2        2        2
+proc5 -> proc0 -> proc1 -> proc2 -> proc3
+  5s       4s       1s       4s       1s  
+
+context = 5
+------------------------------------------------------- 
+
+9 segundos
+  1        1        2        2        2        2        2
+proc6 -> proc7 -> proc0 -> proc1 -> proc2 -> proc3 -> proc5
+  2s       2s       4s       1s       2s       1s       4s
+
+context = 6
+-------------------------------------------------------
+
+10 segundos
+  1        2        2        2        2        2        2
+proc7 -> proc0 -> proc1 -> proc2 -> proc3 -> proc5 -> proc6
+  2s       4s       1s       2s       1s       4s       1s
+
+context = 7
+-------------------------------------------------------
+
+11 segundos
+  2        2        2        2        2        2        2
+proc0 -> proc1 -> proc2 -> proc3 -> proc5 -> proc6-> proc7
+  4s       1s       2s       1s       4s       1s       1s
+
+context = 8
+-------------------------------------------------------
+
+13 segundos
+  2        2        2        2        2        2        2
+proc1 -> proc2 -> proc3 -> proc5 -> proc6 -> proc7-> proc0
+  1s       2s       1s       4s       1s       1s       2s
+
+context = 9
+-------------------------------------------------------
+
+14 segundos
+PROC1 FINALIZADO
+  2        2        2        2        2        2
+proc2 -> proc3 -> proc5 -> proc6 -> proc7-> proc0
+  2s       1s       4s       1s       1s       2s
+
+context = 9
+-------------------------------------------------------
+
+16 segundos
+PROC2 FINALIZADO
+  2        2        2        2        2
+proc3 -> proc5 -> proc6 -> proc7-> proc0
+  1s       4s       1s       1s       2s
+
+context = 9
+-------------------------------------------------------
+
+17 segundos
+PROC3 FINALIZADO
+  2        2        2        2
+proc5 -> proc6 -> proc7-> proc0
+  4s       1s       1s       2s
+
+context = 9
+-------------------------------------------------------
+
+19 segundos
+PROC3 FINALIZADO
+  2        2        2       3      
+proc6 -> proc7-> proc0 -> proc5 
+  1s       1s       2s      2s     
+
+context = 9
+-------------------------------------------------------
+
+20 segundos
+PROC6 FINALIZADO
+  2        2       3      
+proc7-> proc0 -> proc5 
+  1s       2s      2s 
+
+context = 9
+-------------------------------------------------------
+
+21 segundos
+PROC7 FINALIADO
+   2       3      
+proc0 -> proc5 
+   2s      2s 
+
+context = 9
+-------------------------------------------------------
+
+23 segundos
+PROC0 FINALIZADO
+  3      
+proc5 
+  2s 
+
+context = 9
+-------------------------------------------------------
+
+25 segundos
+PROC5 FINALIZADO
+
+context = 9 
+-------------------------------------------------------

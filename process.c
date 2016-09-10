@@ -6,11 +6,14 @@
 /*  Autores: Gustavo Silva e Leonardo Padilha                      */
 /*                                                                 */
 /*******************************************************************/
+#define _GNU_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <pthread.h>
 #include <time.h>
+#include <sched.h>
 #include "process.h"
 #include "timer.h"
 
@@ -20,11 +23,13 @@ PROCESS *head;
 /*-------------------------Funções públicas-------------------------*/
 
 void printLog (int type, char *p1, int line, float time) {
+    unsigned int cpu;
     fprintf (stderr, "[%f] ", time);
+    cpu = sched_getcpu();
     if (type == CPU_EXIT)
-        fprintf (stderr, "<- Processo %s saindo da CPU 1.\n", p1);
+        fprintf (stderr, "<- Processo %s saindo da CPU %d.\n", p1, cpu);
     else if (type == CPU_ENTER)
-        fprintf (stderr, "-> Processo %s entrando da CPU 1.\n", p1);
+        fprintf (stderr, "-> Processo %s entrando na CPU %d.\n", p1, cpu);
     else if (type == PROC_END) {
         fprintf (stderr, "Finalização de execução do processo %s, ",  p1);
         fprintf (stderr, "escrevendo na linha %d\n", line);
@@ -66,6 +71,7 @@ void insertProcess (char *n, float t, float dt, float dl, int line) {
     new->line = line;
     new->rem = dt;
     new->canRun = FALSE;
+    new->priority = 0;
     new->id = -1;
 
     p = head;
