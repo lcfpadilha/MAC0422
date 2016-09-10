@@ -15,7 +15,7 @@
 #include "timer.h"
 #include "multiple.h"
 
-#define QUANTUM 1.0
+#define QUANTUM 0.05
 #define NQUEUE 4
 
 /*-------------------------Funções privadas-------------------------*/
