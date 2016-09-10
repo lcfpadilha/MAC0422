@@ -57,9 +57,6 @@ void multiple (FILE *out, char *d) {
         /* Escalonador é chamado caso um novo processo chegue no   */
         /*sistema.                                                 */
         if (p != NULL && p->t0 <= dt) {
-            /* Desabilita a thread ativa.                           */
-            if (running && running->canRun)
-                running->canRun = FALSE;
             
             /* Imprime a chegada do processo.                       */
             if (d != NULL)
@@ -70,19 +67,19 @@ void multiple (FILE *out, char *d) {
 
             /* Inserimos o processo no final da fila.               */
             addProcessAtEnd (ready, p);
-            running = ready->next;
 
-            /* Se o processo que vai rodar agora não foi iniciado an-*/
-            /*tes, criamos a thread e alteramos o start_quant.       */
-            if (running->id == -1) {
+            /* Se não havia ninguém antes, criamos uma thread nova
+               para o processo que acabou de chegar.                */
+            if (running == NULL) {
+                running = ready->next;
                 args = malloc (sizeof (PARAMS));
                 args->p     = running;
                 pthread_create (&running->id, NULL, &func, args);
                 start_quant = start_timer ();
                 if (d != NULL)
                     printLog (CPU_ENTER, p->name, 0, dt);
+                running->canRun = TRUE;
             }
-            running->canRun = TRUE;
             p = temp;
         }
 
