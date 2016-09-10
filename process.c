@@ -29,7 +29,7 @@ void printLog (int type, char *p1, int line, float time) {
     if (type == CPU_EXIT)
         fprintf (stderr, "<- Processo %s saindo da CPU %d.\n", p1, cpu);
     else if (type == CPU_ENTER)
-        fprintf (stderr, "-> Processo %s entrando da CPU %d.\n", p1, cpu);
+        fprintf (stderr, "-> Processo %s entrando na CPU %d.\n", p1, cpu);
     else if (type == PROC_END) {
         fprintf (stderr, "Finalização de execução do processo %s, ",  p1);
         fprintf (stderr, "escrevendo na linha %d\n", line);

@@ -19,7 +19,7 @@
 #define NQUEUE 4
 
 /*-------------------------Funções privadas-------------------------*/
-void addProcessAtEnd (PROCESS *head, PROCESS *new) {
+void addByPriority (PROCESS *head, PROCESS *new) {
     PROCESS *p;
     p = head;
     while (p->next != NULL)
@@ -65,8 +65,9 @@ void multiple (FILE *out, char *d) {
             /* Guardamos o próximo processo pra uso posterior.      */
             temp = p->next;
 
-            /* Inserimos o processo no final da fila.               */
-            addProcessAtEnd (ready, p);
+            /* Inserimos o processo no fim da parte
+               de prioridade máxima da fila.                        */
+            addByPriority (ready, p);
 
             /* Se não havia ninguém antes, criamos uma thread nova
                para o processo que acabou de chegar.                */
@@ -142,8 +143,8 @@ void multiple (FILE *out, char *d) {
             /* Altera a prioridade do processo.                  */
             temp->priority = (temp->priority + 1) % NQUEUE;
 
-            /* Adiciona processo no final da lista.              */
-            addProcessAtEnd (ready, temp);
+            /* Realoca o processo, agora com menos prioridade, na lista. */
+            addByPriority (ready, temp);
             running = ready->next;
 
             /* Verifica se o processo running já foi iniciado e, */
@@ -155,7 +156,10 @@ void multiple (FILE *out, char *d) {
             }
             running->canRun = TRUE;
             start_quant = start_timer ();
-            context++;
+            
+            /* Se houve de fato uma troca de contexto, contamos  */
+            if(temp != running)
+                context++;
 
             if (d != NULL)
                 printLog (CPU_ENTER, running->name, 0, dt); 
