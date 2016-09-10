@@ -142,7 +142,7 @@ void multiple (FILE *out, char *d) {
         /* Faz a troca de contexto se o quantum do processo já acabou. */
         /* Prioridade vai de 0 a 3, por isso o +1.                     */
         if (running != NULL && dt_quant >=  (running->priority + 1) * QUANTUM) {
-            printf("%d %f\n", running->priority, dt_quant);
+            
             /* Imprime no log a saída do processo da CPU.        */
             if (d != NULL)
                 printLog (CPU_EXIT, running->name, 0, dt); 
