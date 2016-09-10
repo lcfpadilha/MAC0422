@@ -15,17 +15,23 @@
 #include "timer.h"
 #include "multiple.h"
 
-#define QUANTUM 0.05 
+#define QUANTUM 1.0
 #define NQUEUE 4
 
 /*-------------------------Funções privadas-------------------------*/
-void addProcessAtEnd (PROCESS *head, PROCESS *new) {
-    PROCESS *p;
+void addByPriority (PROCESS *head, PROCESS *new) {
+    PROCESS *p, *temp;
     p = head;
-    while (p->next != NULL)
+
+    /* Vamos procurar o ultimo processo da fila que tenha prioridade
+       menor ou igual a do que está entrando.                       */
+    while (p->next != NULL &&  p->next->priority <= new->priority)
         p = p->next;
+    
+    /* Inserimos o novo processo bem ali.                           */
+    temp = p->next;   
     p->next = new;
-    new->next = NULL;
+    new->next = temp;
 }
 
 /*-------------------------Funções públicas-------------------------*/
@@ -33,7 +39,7 @@ void multiple (FILE *out, char *d) {
     struct timespec t_ini, start_quant;
     int traceline = 0, context = 0, live_count = 0;
     float dt, dt_quant;
-    PROCESS *p, *temp, *ready, *running;
+    PROCESS *p, *temp, *ready, *running, *older;
     PARAMS *args;
 
     /* Cabeça da lista de processos prontos.  (é uma cabeça vazia)  */
@@ -49,8 +55,8 @@ void multiple (FILE *out, char *d) {
     start_quant = start_timer ();
 
     /* Simulador irá rodar enquanto houver processo querendo entrar */
-    /*no sistema (ponteiro p) ou processo na fila atual (q[actual]) */
-    while (p != NULL || running != NULL) {
+    /*no sistema (ponteiro p) ou processo na fila ready             */
+    while (p != NULL || ready->next != NULL) {
         /* Calculo do tempo atual. */
         dt = check_timer (t_ini);
 
@@ -67,11 +73,15 @@ void multiple (FILE *out, char *d) {
 
             /* Guardamos o próximo processo pra uso posterior.      */
             temp = p->next;
+            older = running;
 
             /* Inserimos o processo no final da fila.               */
-            addProcessAtEnd (ready, p);
+            addByPriority (ready, p);
             running = ready->next;
-
+            if (older != NULL && older != running) {
+                if (d) printLog (CPU_EXIT, older->name, 0, dt);
+                context++;
+            }
             /* Se o processo que vai rodar agora não foi iniciado an-*/
             /*tes, criamos a thread e alteramos o start_quant.       */
             if (running->id == -1) {
@@ -129,9 +139,10 @@ void multiple (FILE *out, char *d) {
         /* Checando tempo de quantum                           */
         dt_quant = check_timer (start_quant);
 
-        /* Faz a troca de contexto se o quantum do processo já*/
-        /*acabou.                                             */
-        if (running != NULL && dt_quant >= running->priority * QUANTUM) {
+        /* Faz a troca de contexto se o quantum do processo já acabou. */
+        /* Prioridade vai de 0 a 3, por isso o +1.                     */
+        if (running != NULL && dt_quant >=  (running->priority + 1) * QUANTUM) {
+            printf("%d %f\n", running->priority, dt_quant);
             /* Imprime no log a saída do processo da CPU.        */
             if (d != NULL)
                 printLog (CPU_EXIT, running->name, 0, dt); 
@@ -146,8 +157,8 @@ void multiple (FILE *out, char *d) {
             /* Altera a prioridade do processo.                  */
             temp->priority = (temp->priority + 1) % NQUEUE;
 
-            /* Adiciona processo no final da lista.              */
-            addProcessAtEnd (ready, temp);
+            /* Realoca o processo, agora com menos prioridade, na lista. */
+            addByPriority (ready, temp);
             running = ready->next;
 
             /* Verifica se o processo running já foi iniciado e, */
@@ -159,6 +170,7 @@ void multiple (FILE *out, char *d) {
             }
             running->canRun = TRUE;
             start_quant = start_timer ();
+            
             context++;
 
             if (d != NULL)

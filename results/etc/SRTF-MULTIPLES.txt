@@ -16,150 +16,142 @@ context = 1
 -------------------------------------------------------
 
 3 segundos
-  2        1       2
-proc0 -> proc2 -> proc1
- 4s        5s      1s
+  1       2        2
+proc2 -> proc0 -> proc1
+  5s        4s       1s
 
 context = 2
 -------------------------------------------------------
 
-5 segundos
-  1        2        3
-proc2 -> proc1 -> proc0
-  5s       1s       2s
-
+4 segundos
+  2        2        2
+proc0 -> proc1 -> proc2
+  4s       1s       4s
 context = 3
 -------------------------------------------------------
 
 6 segundos
-  2        3        1       1        2
-proc1 -> proc0 -> proc3 -> proc4 -> proc2
-  1s       2s       2s       1s      4s
+  1        1        2        2        2
+proc3 -> proc4 -> proc0 -> proc1 -> proc2
+  2s       1s       4s       1s       4s
 
 context = 4
 -------------------------------------------------------
 
 7 segundos
-PROC1 FINALIZADO
-  3        1        1        2  
-proc0 -> proc3 -> proc4 -> proc2
-  2s       2s      1s        4s
+  1        2        2        2        2
+proc4 -> proc0 -> proc1 -> proc2 -> proc3
+  1s       4s       1s       4s       1s
 
-context = 4
+context = 5
 -------------------------------------------------------
 
 8 segundos
-  3        1        1        2        1 
-proc0 -> proc3 -> proc4 -> proc2 -> proc5
-  1s       2s       1s       4s       5s   
+PROC4 FINALIZADO
+  1        2        2        2        2
+proc5 -> proc0 -> proc1 -> proc2 -> proc3
+  5s       4s       1s       4s       1s  
 
-context = 4
+context = 5
 ------------------------------------------------------- 
 
 9 segundos
-PROC0 FINALIZADO
-  1        1        2        1        1        1
-proc3 -> proc4 -> proc2 -> proc5 -> proc6 -> proc7
-  2s        1s      4s       5s       2s       2s
-
-context = 4
--------------------------------------------------------
-
-10 segundos
-  1        2        1        1        1        2
-proc4 -> proc2 -> proc5 -> proc6 -> proc7 -> proc3
-  1s       4s       5s       2s       2s       1s
-
-context = 5
--------------------------------------------------------
-
-11 segundos
-PROC4 FINALIZADO
-  2        1        1        1        2  
-proc2 -> proc5 -> proc6 -> proc7 -> proc3
-  4s       5s      2s        2s       1s
-
-context = 5
--------------------------------------------------------
-
-13 segundos
-  1        1        1        2        3
-proc5 -> proc6 -> proc7 -> proc3 -> proc2
-  5s       2s       2s       1s       2s
+  1        1        2        2        2        2        2
+proc6 -> proc7 -> proc0 -> proc1 -> proc2 -> proc3 -> proc5
+  2s       2s       4s       1s       2s       1s       4s
 
 context = 6
 -------------------------------------------------------
 
-14 segundos
-  1        1        2        3        2
-proc6 -> proc7 -> proc3 -> proc2 -> proc5
-  2s       2s       1s       2s       4s
+10 segundos
+  1        2        2        2        2        2        2
+proc7 -> proc0 -> proc1 -> proc2 -> proc3 -> proc5 -> proc6
+  2s       4s       1s       2s       1s       4s       1s
 
 context = 7
 -------------------------------------------------------
 
-15 segundos
-  1        2        3        2        2
-proc7 -> proc3 -> proc2 -> proc5 -> proc6
-  2s       1s       2s       4s       1s
+11 segundos
+  2        2        2        2        2        2        2
+proc0 -> proc1 -> proc2 -> proc3 -> proc5 -> proc6-> proc7
+  4s       1s       2s       1s       4s       1s       1s
 
 context = 8
 -------------------------------------------------------
 
+13 segundos
+  2        2        2        2        2        2        2
+proc1 -> proc2 -> proc3 -> proc5 -> proc6 -> proc7-> proc0
+  1s       2s       1s       4s       1s       1s       2s
+
+context = 9
+-------------------------------------------------------
+
+14 segundos
+PROC1 FINALIZADO
+  2        2        2        2        2        2
+proc2 -> proc3 -> proc5 -> proc6 -> proc7-> proc0
+  2s       1s       4s       1s       1s       2s
+
+context = 9
+-------------------------------------------------------
+
 16 segundos
-  2        3        2        2        2
-proc3 -> proc2 -> proc5 -> proc6 -> proc7
-  1s       2s       4s       1s       1s
+PROC2 FINALIZADO
+  2        2        2        2        2
+proc3 -> proc5 -> proc6 -> proc7-> proc0
+  1s       4s       1s       1s       2s
 
 context = 9
 -------------------------------------------------------
 
 17 segundos
 PROC3 FINALIZADO
-  3        2        2        2
-proc2 -> proc5 -> proc6 -> proc7
-  2s       4s       1s       1s
+  2        2        2        2
+proc5 -> proc6 -> proc7-> proc0
+  4s       1s       1s       2s
 
 context = 9
 -------------------------------------------------------
 
 19 segundos
-PROC2 FINALIZADO
- 2         2        2
-proc5 -> proc6 -> proc7
- 4s        1s       1s
+PROC3 FINALIZADO
+  2        2        2       3      
+proc6 -> proc7-> proc0 -> proc5 
+  1s       1s       2s      2s     
+
+context = 9
+-------------------------------------------------------
+
+20 segundos
+PROC6 FINALIZADO
+  2        2       3      
+proc7-> proc0 -> proc5 
+  1s       2s      2s 
 
 context = 9
 -------------------------------------------------------
 
 21 segundos
-  2       2        3 
-proc6 -> proc7 -> proc5
-  1s      1s        2s
+PROC7 FINALIADO
+   2       3      
+proc0 -> proc5 
+   2s      2s 
 
-context = 10
--------------------------------------------------------
-
-22 segundos
-PROC6 FINALIZADO
-  2        3
-proc7 -> proc5
-  1s       2s
-
-context = 10
+context = 9
 -------------------------------------------------------
 
 23 segundos
-PROC7 FINALIZADO
-  3
-proc5
-  2s
+PROC0 FINALIZADO
+  3      
+proc5 
+  2s 
 
-context = 10
+context = 9
 -------------------------------------------------------
 
 25 segundos
 PROC5 FINALIZADO
 
-context = 10
+context = 9 
 -------------------------------------------------------

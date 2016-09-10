@@ -1,11 +1,9 @@
-proc5 6.941
-proc7 7.783
-proc0 11.354
-proc2 11.904
-proc8 21.355
-proc1 29.646
-proc4 38.707
-proc3 46.918
-proc6 56.488
-proc9 65.318
-847
+proc1 14.027
+proc3 17.039
+proc4 17.051
+proc6 20.059
+proc7 21.070
+proc0 21.070
+proc2 23.070
+proc5 25.090
+14
