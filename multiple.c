@@ -20,12 +20,22 @@
 
 /*-------------------------Funções privadas-------------------------*/
 void addByPriority (PROCESS *head, PROCESS *new) {
-    PROCESS *p;
+    PROCESS *p, *temp;
     p = head;
+    printf("**Chegando processo %s com prioridade %d**#\n", new->name, new->priority);
+    /* Vamos procurar o ultimo processo da fila que tenha prioridade
+       menor ou igual a do que está entrando.                       */
     while (p->next != NULL)
         p = p->next;
+    
+    /* Inserimos o novo processo bem ali.                           */
+    temp = p->next;   
     p->next = new;
-    new->next = NULL;
+    new->next = temp;
+    
+    /*                 
+    while (p->next != NULL && p->next->priority <= new->priority)
+    */
 }
 
 /*-------------------------Funções públicas-------------------------*/
@@ -126,9 +136,9 @@ void multiple (FILE *out, char *d) {
         /* Checando tempo de quantum                           */
         dt_quant = check_timer (start_quant);
 
-        /* Faz a troca de contexto se o quantum do processo já*/
-        /*acabou.                                             */
-        if (running != NULL && dt_quant >= running->priority * QUANTUM) {
+        /* Faz a troca de contexto se o quantum do processo já acabou. */
+        /* Prioridade vai de 0 a 3, por isso o +1.                     */
+        if (running != NULL && dt_quant >= (running->priority + 1) * QUANTUM) {
             /* Imprime no log a saída do processo da CPU.        */
             if (d != NULL)
                 printLog (CPU_EXIT, running->name, 0, dt); 
@@ -157,9 +167,7 @@ void multiple (FILE *out, char *d) {
             running->canRun = TRUE;
             start_quant = start_timer ();
             
-            /* Se houve de fato uma troca de contexto, contamos  */
-            if(temp != running)
-                context++;
+            context++;
 
             if (d != NULL)
                 printLog (CPU_ENTER, running->name, 0, dt); 
