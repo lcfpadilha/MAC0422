@@ -83,6 +83,7 @@ void multiple (FILE *out, char *d) {
                     printLog (CPU_ENTER, p->name, 0, dt);
             }
             running->canRun = TRUE;
+            /* Proximo processo será o que estava guardado em temp.  */
             p = temp;
         }
 
