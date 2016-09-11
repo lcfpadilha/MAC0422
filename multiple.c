@@ -37,7 +37,7 @@ void addByPriority (PROCESS *head, PROCESS *new) {
 /*-------------------------Funções públicas-------------------------*/
 void multiple (FILE *out, char *d) {
     struct timespec t_ini, start_quant;
-    int traceline = 0, context = 0, live_count = 0;
+    int traceline = 0, context = 0;
     float dt, dt_quant;
     PROCESS *p, *temp, *ready, *running, *older;
     PARAMS *args;
@@ -109,9 +109,8 @@ void multiple (FILE *out, char *d) {
             }
 
             /* Imprime na saida o resultado.                */
-            fprintf(out, "%s %.3f\n", running->name, check_timer (t_ini));
-
-            if (running->deadline >= check_timer (t_ini)) live_count++;
+            fprintf(out, "%s %.3f %.3f\n", running->name, check_timer (t_ini), 
+                    check_timer (t_ini) - running->t0);
 
             /* Avança para o próximo processo na fila ready */
             temp = running;
@@ -179,7 +178,6 @@ void multiple (FILE *out, char *d) {
     }
     /* Imprime a quantidade de mudança de contextos.   */
     fprintf (out, "%d\n", context);
-    printf ("%d %d\n", context, live_count);
     if (d != NULL)
         fprintf (stderr, "Mudanças de contextos: %d\n", context);
 
