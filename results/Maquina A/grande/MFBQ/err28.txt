@@ -1,0 +1,1219 @@
+[0.375000] Processo proc31 da linha 31 do trace chegou no sistema
+[0.375000] -> Processo proc31 entrando na CPU 3.
+[0.875000] Processo proc11 da linha 11 do trace chegou no sistema
+[0.875000] Processo proc72 da linha 72 do trace chegou no sistema
+[1.375000] <- Processo proc31 saindo da CPU 3.
+[1.375000] -> Processo proc11 entrando na CPU 3.
+[1.750000] Processo proc130 da linha 130 do trace chegou no sistema
+[2.000000] Processo proc48 da linha 48 do trace chegou no sistema
+[2.250000] Processo proc131 da linha 131 do trace chegou no sistema
+[2.375000] <- Processo proc11 saindo da CPU 3.
+[2.375000] -> Processo proc72 entrando na CPU 3.
+[3.375000] Processo proc39 da linha 39 do trace chegou no sistema
+[3.375000] <- Processo proc72 saindo da CPU 3.
+[3.375000] -> Processo proc130 entrando na CPU 3.
+[4.375000] Processo proc85 da linha 85 do trace chegou no sistema
+[4.375000] <- Processo proc130 saindo da CPU 3.
+[4.375000] -> Processo proc48 entrando na CPU 3.
+[4.625000] Processo proc84 da linha 84 do trace chegou no sistema
+[4.875000] Processo proc64 da linha 64 do trace chegou no sistema
+[5.250000] <- Processo proc48 saindo da CPU 3.
+[5.250000] -> Processo proc131 entrando na CPU 3.
+[5.750000] Processo proc91 da linha 91 do trace chegou no sistema
+[6.125000] Processo proc19 da linha 19 do trace chegou no sistema
+[6.375000] <- Processo proc131 saindo da CPU 4.
+[6.375000] -> Processo proc39 entrando na CPU 4.
+[7.125000] Processo proc129 da linha 129 do trace chegou no sistema
+[7.250000] <- Processo proc39 saindo da CPU 6.
+[7.250000] -> Processo proc85 entrando na CPU 6.
+[7.750000] <- Processo proc85 saindo da CPU 4.
+[7.750000] Finalização de execução do processo proc85, escrevendo na linha 0
+[7.750000] -> Processo proc84 entrando na CPU 4.
+[8.250000] Processo proc6 da linha 6 do trace chegou no sistema
+[8.500000] Processo proc103 da linha 103 do trace chegou no sistema
+[8.625000] Processo proc30 da linha 30 do trace chegou no sistema
+[8.625000] <- Processo proc84 saindo da CPU 4.
+[8.625000] -> Processo proc64 entrando na CPU 4.
+[9.000000] Processo proc106 da linha 106 do trace chegou no sistema
+[9.750000] <- Processo proc64 saindo da CPU 0.
+[9.750000] -> Processo proc91 entrando na CPU 0.
+[9.875000] Processo proc42 da linha 42 do trace chegou no sistema
+[10.250000] Processo proc57 da linha 57 do trace chegou no sistema
+[10.500000] Processo proc66 da linha 66 do trace chegou no sistema
+[10.500000] Processo proc40 da linha 40 do trace chegou no sistema
+[10.625000] Processo proc133 da linha 133 do trace chegou no sistema
+[10.625000] <- Processo proc91 saindo da CPU 5.
+[10.625000] -> Processo proc19 entrando na CPU 5.
+[10.875000] Processo proc109 da linha 109 do trace chegou no sistema
+[11.625000] <- Processo proc19 saindo da CPU 5.
+[11.625000] -> Processo proc129 entrando na CPU 5.
+[12.125000] Processo proc142 da linha 142 do trace chegou no sistema
+[12.625000] <- Processo proc129 saindo da CPU 5.
+[12.625000] -> Processo proc6 entrando na CPU 5.
+[12.750000] Processo proc45 da linha 45 do trace chegou no sistema
+[13.125000] Processo proc98 da linha 98 do trace chegou no sistema
+[13.250000] Processo proc63 da linha 63 do trace chegou no sistema
+[13.250000] <- Processo proc6 saindo da CPU 5.
+[13.250000] Finalização de execução do processo proc6, escrevendo na linha 1
+[13.250000] -> Processo proc103 entrando na CPU 5.
+[13.875000] Processo proc65 da linha 65 do trace chegou no sistema
+[14.000000] Processo proc113 da linha 113 do trace chegou no sistema
+[14.250000] <- Processo proc103 saindo da CPU 5.
+[14.250000] -> Processo proc30 entrando na CPU 5.
+[14.500000] Processo proc93 da linha 93 do trace chegou no sistema
+[15.125000] <- Processo proc30 saindo da CPU 5.
+[15.125000] -> Processo proc106 entrando na CPU 5.
+[15.250000] Processo proc82 da linha 82 do trace chegou no sistema
+[15.625000] Processo proc13 da linha 13 do trace chegou no sistema
+[15.625000] Processo proc20 da linha 20 do trace chegou no sistema
+[15.875000] Processo proc145 da linha 145 do trace chegou no sistema
+[16.250000] <- Processo proc106 saindo da CPU 5.
+[16.250000] -> Processo proc42 entrando na CPU 5.
+[16.375000] Processo proc83 da linha 83 do trace chegou no sistema
+[16.500000] Processo proc8 da linha 8 do trace chegou no sistema
+[16.875000] Processo proc112 da linha 112 do trace chegou no sistema
+[16.875000] Processo proc26 da linha 26 do trace chegou no sistema
+[17.125000] <- Processo proc42 saindo da CPU 5.
+[17.125000] -> Processo proc57 entrando na CPU 5.
+[18.125000] <- Processo proc57 saindo da CPU 5.
+[18.125000] -> Processo proc66 entrando na CPU 5.
+[18.250000] Processo proc124 da linha 124 do trace chegou no sistema
+[19.125000] <- Processo proc66 saindo da CPU 5.
+[19.125000] -> Processo proc40 entrando na CPU 5.
+[19.750000] Processo proc3 da linha 3 do trace chegou no sistema
+[19.875000] Processo proc119 da linha 119 do trace chegou no sistema
+[20.250000] Processo proc125 da linha 125 do trace chegou no sistema
+[20.250000] <- Processo proc40 saindo da CPU 5.
+[20.250000] -> Processo proc133 entrando na CPU 5.
+[20.250000] Processo proc69 da linha 69 do trace chegou no sistema
+[21.250000] <- Processo proc133 saindo da CPU 5.
+[21.250000] -> Processo proc109 entrando na CPU 5.
+[21.375000] Processo proc18 da linha 18 do trace chegou no sistema
+[21.500000] Processo proc120 da linha 120 do trace chegou no sistema
+[22.000000] Processo proc87 da linha 87 do trace chegou no sistema
+[22.125000] <- Processo proc109 saindo da CPU 7.
+[22.125000] -> Processo proc142 entrando na CPU 7.
+[23.250000] <- Processo proc142 saindo da CPU 5.
+[23.250000] -> Processo proc45 entrando na CPU 5.
+[23.500000] Processo proc136 da linha 136 do trace chegou no sistema
+[23.625000] Processo proc74 da linha 74 do trace chegou no sistema
+[24.000000] Processo proc102 da linha 102 do trace chegou no sistema
+[24.250000] <- Processo proc45 saindo da CPU 5.
+[24.250000] -> Processo proc98 entrando na CPU 5.
+[24.500000] Processo proc54 da linha 54 do trace chegou no sistema
+[24.625000] Processo proc61 da linha 61 do trace chegou no sistema
+[25.250000] <- Processo proc98 saindo da CPU 5.
+[25.250000] -> Processo proc63 entrando na CPU 5.
+[26.125000] <- Processo proc63 saindo da CPU 5.
+[26.125000] -> Processo proc65 entrando na CPU 5.
+[26.250000] Processo proc148 da linha 148 do trace chegou no sistema
+[26.750000] Processo proc53 da linha 53 do trace chegou no sistema
+[26.875000] Processo proc115 da linha 115 do trace chegou no sistema
+[27.250000] Processo proc71 da linha 71 do trace chegou no sistema
+[27.250000] <- Processo proc65 saindo da CPU 5.
+[27.250000] -> Processo proc113 entrando na CPU 5.
+[27.500000] <- Processo proc113 saindo da CPU 5.
+[27.500000] Finalização de execução do processo proc113, escrevendo na linha 2
+[27.500000] -> Processo proc93 entrando na CPU 5.
+[27.875000] Processo proc144 da linha 144 do trace chegou no sistema
+[28.125000] Processo proc51 da linha 51 do trace chegou no sistema
+[28.375000] Processo proc44 da linha 44 do trace chegou no sistema
+[28.500000] <- Processo proc93 saindo da CPU 5.
+[28.500000] -> Processo proc82 entrando na CPU 5.
+[29.000000] Processo proc16 da linha 16 do trace chegou no sistema
+[29.375000] <- Processo proc82 saindo da CPU 5.
+[29.375000] -> Processo proc13 entrando na CPU 5.
+[29.500000] Processo proc0 da linha 0 do trace chegou no sistema
+[29.625000] Processo proc105 da linha 105 do trace chegou no sistema
+[30.375000] Processo proc121 da linha 121 do trace chegou no sistema
+[30.375000] <- Processo proc13 saindo da CPU 5.
+[30.375000] -> Processo proc20 entrando na CPU 5.
+[31.500000] <- Processo proc20 saindo da CPU 5.
+[31.500000] -> Processo proc145 entrando na CPU 5.
+[31.875000] Processo proc47 da linha 47 do trace chegou no sistema
+[32.500000] <- Processo proc145 saindo da CPU 5.
+[32.500000] -> Processo proc83 entrando na CPU 5.
+[32.875000] Processo proc67 da linha 67 do trace chegou no sistema
+[33.500000] Processo proc138 da linha 138 do trace chegou no sistema
+[33.500000] <- Processo proc83 saindo da CPU 5.
+[33.500000] -> Processo proc8 entrando na CPU 5.
+[34.375000] Processo proc140 da linha 140 do trace chegou no sistema
+[34.500000] <- Processo proc8 saindo da CPU 5.
+[34.500000] -> Processo proc112 entrando na CPU 5.
+[35.000000] Processo proc1 da linha 1 do trace chegou no sistema
+[35.500000] <- Processo proc112 saindo da CPU 5.
+[35.500000] -> Processo proc26 entrando na CPU 5.
+[35.750000] Processo proc7 da linha 7 do trace chegou no sistema
+[36.375000] Processo proc97 da linha 97 do trace chegou no sistema
+[36.375000] <- Processo proc26 saindo da CPU 5.
+[36.375000] -> Processo proc124 entrando na CPU 5.
+[36.625000] Processo proc99 da linha 99 do trace chegou no sistema
+[37.000000] Processo proc58 da linha 58 do trace chegou no sistema
+[37.375000] <- Processo proc124 saindo da CPU 5.
+[37.375000] -> Processo proc3 entrando na CPU 5.
+[38.125000] Processo proc36 da linha 36 do trace chegou no sistema
+[38.250000] Processo proc88 da linha 88 do trace chegou no sistema
+[38.375000] <- Processo proc3 saindo da CPU 5.
+[38.375000] -> Processo proc119 entrando na CPU 5.
+[38.875000] Processo proc101 da linha 101 do trace chegou no sistema
+[39.250000] Processo proc25 da linha 25 do trace chegou no sistema
+[39.500000] <- Processo proc119 saindo da CPU 5.
+[39.500000] -> Processo proc125 entrando na CPU 5.
+[40.500000] <- Processo proc125 saindo da CPU 5.
+[40.500000] -> Processo proc69 entrando na CPU 5.
+[40.625000] Processo proc12 da linha 12 do trace chegou no sistema
+[41.125000] Processo proc128 da linha 128 do trace chegou no sistema
+[41.500000] <- Processo proc69 saindo da CPU 5.
+[41.500000] -> Processo proc18 entrando na CPU 5.
+[41.625000] Processo proc29 da linha 29 do trace chegou no sistema
+[42.125000] <- Processo proc18 saindo da CPU 5.
+[42.125000] Finalização de execução do processo proc18, escrevendo na linha 3
+[42.125000] -> Processo proc120 entrando na CPU 5.
+[42.375000] Processo proc96 da linha 96 do trace chegou no sistema
+[42.875000] Processo proc62 da linha 62 do trace chegou no sistema
+[43.000000] <- Processo proc120 saindo da CPU 5.
+[43.000000] -> Processo proc87 entrando na CPU 5.
+[43.250000] Processo proc139 da linha 139 do trace chegou no sistema
+[43.250000] Processo proc43 da linha 43 do trace chegou no sistema
+[43.500000] Processo proc94 da linha 94 do trace chegou no sistema
+[44.000000] <- Processo proc87 saindo da CPU 5.
+[44.000000] -> Processo proc136 entrando na CPU 5.
+[45.000000] Processo proc80 da linha 80 do trace chegou no sistema
+[45.125000] Processo proc90 da linha 90 do trace chegou no sistema
+[45.125000] <- Processo proc136 saindo da CPU 5.
+[45.125000] -> Processo proc74 entrando na CPU 5.
+[45.250000] Processo proc35 da linha 35 do trace chegou no sistema
+[45.375000] <- Processo proc74 saindo da CPU 5.
+[45.375000] Finalização de execução do processo proc74, escrevendo na linha 4
+[45.375000] -> Processo proc102 entrando na CPU 5.
+[46.250000] <- Processo proc102 saindo da CPU 5.
+[46.250000] -> Processo proc54 entrando na CPU 5.
+[47.125000] Processo proc132 da linha 132 do trace chegou no sistema
+[47.250000] Processo proc21 da linha 21 do trace chegou no sistema
+[47.375000] <- Processo proc54 saindo da CPU 5.
+[47.375000] Finalização de execução do processo proc54, escrevendo na linha 5
+[47.375000] -> Processo proc61 entrando na CPU 5.
+[47.500000] Processo proc5 da linha 5 do trace chegou no sistema
+[47.500000] Processo proc14 da linha 14 do trace chegou no sistema
+[47.750000] Processo proc110 da linha 110 do trace chegou no sistema
+[48.000000] Processo proc22 da linha 22 do trace chegou no sistema
+[48.000000] Processo proc79 da linha 79 do trace chegou no sistema
+[48.375000] <- Processo proc61 saindo da CPU 5.
+[48.375000] -> Processo proc148 entrando na CPU 5.
+[48.500000] Processo proc55 da linha 55 do trace chegou no sistema
+[48.875000] Processo proc149 da linha 149 do trace chegou no sistema
+[49.250000] Processo proc77 da linha 77 do trace chegou no sistema
+[49.250000] <- Processo proc148 saindo da CPU 5.
+[49.250000] -> Processo proc53 entrando na CPU 5.
+[49.625000] Processo proc81 da linha 81 do trace chegou no sistema
+[49.875000] Processo proc10 da linha 10 do trace chegou no sistema
+[50.250000] <- Processo proc53 saindo da CPU 5.
+[50.250000] -> Processo proc115 entrando na CPU 5.
+[50.375000] Processo proc107 da linha 107 do trace chegou no sistema
+[50.750000] Processo proc134 da linha 134 do trace chegou no sistema
+[51.375000] <- Processo proc115 saindo da CPU 5.
+[51.375000] -> Processo proc71 entrando na CPU 5.
+[51.625000] Processo proc116 da linha 116 do trace chegou no sistema
+[51.875000] Processo proc32 da linha 32 do trace chegou no sistema
+[52.125000] Processo proc100 da linha 100 do trace chegou no sistema
+[52.250000] Processo proc122 da linha 122 do trace chegou no sistema
+[52.250000] <- Processo proc71 saindo da CPU 5.
+[52.250000] -> Processo proc144 entrando na CPU 5.
+[52.500000] Processo proc104 da linha 104 do trace chegou no sistema
+[52.625000] <- Processo proc144 saindo da CPU 5.
+[52.625000] Finalização de execução do processo proc144, escrevendo na linha 6
+[52.625000] -> Processo proc51 entrando na CPU 5.
+[52.750000] Processo proc108 da linha 108 do trace chegou no sistema
+[52.750000] <- Processo proc51 saindo da CPU 5.
+[52.750000] Finalização de execução do processo proc51, escrevendo na linha 7
+[52.750000] -> Processo proc44 entrando na CPU 5.
+[53.625000] <- Processo proc44 saindo da CPU 5.
+[53.625000] -> Processo proc16 entrando na CPU 5.
+[53.750000] Processo proc117 da linha 117 do trace chegou no sistema
+[54.250000] Processo proc46 da linha 46 do trace chegou no sistema
+[54.375000] Processo proc70 da linha 70 do trace chegou no sistema
+[54.625000] Processo proc141 da linha 141 do trace chegou no sistema
+[54.750000] <- Processo proc16 saindo da CPU 5.
+[54.750000] -> Processo proc0 entrando na CPU 5.
+[55.500000] Processo proc118 da linha 118 do trace chegou no sistema
+[55.625000] Processo proc24 da linha 24 do trace chegou no sistema
+[55.625000] <- Processo proc0 saindo da CPU 5.
+[55.625000] -> Processo proc105 entrando na CPU 5.
+[55.875000] Processo proc2 da linha 2 do trace chegou no sistema
+[56.250000] Processo proc17 da linha 17 do trace chegou no sistema
+[56.250000] Processo proc92 da linha 92 do trace chegou no sistema
+[56.625000] Processo proc60 da linha 60 do trace chegou no sistema
+[56.750000] <- Processo proc105 saindo da CPU 5.
+[56.750000] -> Processo proc121 entrando na CPU 5.
+[57.750000] <- Processo proc121 saindo da CPU 5.
+[57.750000] -> Processo proc47 entrando na CPU 5.
+[58.125000] Processo proc37 da linha 37 do trace chegou no sistema
+[58.125000] Processo proc111 da linha 111 do trace chegou no sistema
+[58.250000] Processo proc15 da linha 15 do trace chegou no sistema
+[58.750000] <- Processo proc47 saindo da CPU 5.
+[58.750000] -> Processo proc67 entrando na CPU 5.
+[59.750000] Processo proc76 da linha 76 do trace chegou no sistema
+[59.750000] <- Processo proc67 saindo da CPU 5.
+[59.750000] -> Processo proc138 entrando na CPU 5.
+[60.375000] Processo proc73 da linha 73 do trace chegou no sistema
+[60.625000] <- Processo proc138 saindo da CPU 5.
+[60.625000] -> Processo proc140 entrando na CPU 5.
+[60.750000] Processo proc49 da linha 49 do trace chegou no sistema
+[61.375000] Processo proc4 da linha 4 do trace chegou no sistema
+[61.625000] <- Processo proc140 saindo da CPU 5.
+[61.625000] -> Processo proc1 entrando na CPU 5.
+[62.375000] Processo proc41 da linha 41 do trace chegou no sistema
+[62.750000] <- Processo proc1 saindo da CPU 5.
+[62.750000] -> Processo proc7 entrando na CPU 5.
+[63.250000] Processo proc56 da linha 56 do trace chegou no sistema
+[63.625000] Processo proc59 da linha 59 do trace chegou no sistema
+[63.750000] <- Processo proc7 saindo da CPU 5.
+[63.750000] -> Processo proc97 entrando na CPU 5.
+[64.125000] Processo proc86 da linha 86 do trace chegou no sistema
+[64.125000] Processo proc68 da linha 68 do trace chegou no sistema
+[64.250000] Processo proc50 da linha 50 do trace chegou no sistema
+[64.375000] Processo proc146 da linha 146 do trace chegou no sistema
+[64.625000] <- Processo proc97 saindo da CPU 5.
+[64.625000] -> Processo proc99 entrando na CPU 5.
+[65.250000] Processo proc23 da linha 23 do trace chegou no sistema
+[65.625000] Processo proc9 da linha 9 do trace chegou no sistema
+[65.750000] Processo proc114 da linha 114 do trace chegou no sistema
+[65.750000] <- Processo proc99 saindo da CPU 5.
+[65.750000] -> Processo proc58 entrando na CPU 5.
+[66.000000] Processo proc38 da linha 38 do trace chegou no sistema
+[66.625000] <- Processo proc58 saindo da CPU 5.
+[66.625000] -> Processo proc36 entrando na CPU 5.
+[67.250000] Processo proc127 da linha 127 do trace chegou no sistema
+[67.625000] <- Processo proc36 saindo da CPU 5.
+[67.625000] -> Processo proc88 entrando na CPU 5.
+[68.500000] Processo proc123 da linha 123 do trace chegou no sistema
+[68.625000] <- Processo proc88 saindo da CPU 5.
+[68.625000] -> Processo proc101 entrando na CPU 5.
+[69.000000] Processo proc33 da linha 33 do trace chegou no sistema
+[69.250000] Processo proc75 da linha 75 do trace chegou no sistema
+[69.500000] Processo proc137 da linha 137 do trace chegou no sistema
+[69.750000] Processo proc78 da linha 78 do trace chegou no sistema
+[69.750000] <- Processo proc101 saindo da CPU 5.
+[69.750000] -> Processo proc25 entrando na CPU 5.
+[70.250000] Processo proc28 da linha 28 do trace chegou no sistema
+[70.250000] Processo proc135 da linha 135 do trace chegou no sistema
+[70.625000] <- Processo proc25 saindo da CPU 5.
+[70.625000] -> Processo proc12 entrando na CPU 5.
+[71.375000] Processo proc34 da linha 34 do trace chegou no sistema
+[71.750000] <- Processo proc12 saindo da CPU 5.
+[71.750000] -> Processo proc128 entrando na CPU 5.
+[72.375000] Processo proc27 da linha 27 do trace chegou no sistema
+[72.375000] Processo proc126 da linha 126 do trace chegou no sistema
+[72.750000] <- Processo proc128 saindo da CPU 5.
+[72.750000] -> Processo proc29 entrando na CPU 5.
+[73.250000] Processo proc95 da linha 95 do trace chegou no sistema
+[73.500000] Processo proc143 da linha 143 do trace chegou no sistema
+[73.625000] <- Processo proc29 saindo da CPU 5.
+[73.625000] -> Processo proc96 entrando na CPU 5.
+[74.625000] Processo proc52 da linha 52 do trace chegou no sistema
+[74.625000] <- Processo proc96 saindo da CPU 5.
+[74.625000] -> Processo proc62 entrando na CPU 5.
+[74.750000] Processo proc89 da linha 89 do trace chegou no sistema
+[75.000000] Processo proc147 da linha 147 do trace chegou no sistema
+[75.750000] <- Processo proc62 saindo da CPU 5.
+[75.750000] -> Processo proc139 entrando na CPU 5.
+[76.625000] <- Processo proc139 saindo da CPU 5.
+[76.625000] -> Processo proc43 entrando na CPU 5.
+[77.625000] <- Processo proc43 saindo da CPU 5.
+[77.625000] -> Processo proc94 entrando na CPU 5.
+[78.750000] <- Processo proc94 saindo da CPU 5.
+[78.750000] -> Processo proc80 entrando na CPU 5.
+[79.750000] <- Processo proc80 saindo da CPU 5.
+[79.750000] -> Processo proc90 entrando na CPU 5.
+[80.625000] <- Processo proc90 saindo da CPU 5.
+[80.625000] -> Processo proc35 entrando na CPU 5.
+[81.625000] <- Processo proc35 saindo da CPU 5.
+[81.625000] -> Processo proc132 entrando na CPU 5.
+[82.750000] <- Processo proc132 saindo da CPU 5.
+[82.750000] -> Processo proc21 entrando na CPU 5.
+[83.750000] <- Processo proc21 saindo da CPU 5.
+[83.750000] -> Processo proc5 entrando na CPU 5.
+[84.750000] <- Processo proc5 saindo da CPU 5.
+[84.750000] -> Processo proc14 entrando na CPU 5.
+[85.750000] <- Processo proc14 saindo da CPU 5.
+[85.750000] -> Processo proc110 entrando na CPU 5.
+[86.625000] <- Processo proc110 saindo da CPU 5.
+[86.625000] Finalização de execução do processo proc110, escrevendo na linha 8
+[86.625000] -> Processo proc22 entrando na CPU 5.
+[87.625000] <- Processo proc22 saindo da CPU 5.
+[87.625000] -> Processo proc79 entrando na CPU 5.
+[88.500000] <- Processo proc79 saindo da CPU 5.
+[88.500000] -> Processo proc55 entrando na CPU 5.
+[89.500000] <- Processo proc55 saindo da CPU 5.
+[89.500000] -> Processo proc149 entrando na CPU 5.
+[90.500000] <- Processo proc149 saindo da CPU 5.
+[90.500000] -> Processo proc77 entrando na CPU 5.
+[91.500000] <- Processo proc77 saindo da CPU 5.
+[91.500000] -> Processo proc81 entrando na CPU 5.
+[92.625000] <- Processo proc81 saindo da CPU 5.
+[92.625000] -> Processo proc10 entrando na CPU 5.
+[93.625000] <- Processo proc10 saindo da CPU 5.
+[93.625000] -> Processo proc107 entrando na CPU 5.
+[94.500000] <- Processo proc107 saindo da CPU 5.
+[94.500000] -> Processo proc134 entrando na CPU 5.
+[95.500000] <- Processo proc134 saindo da CPU 5.
+[95.500000] -> Processo proc116 entrando na CPU 5.
+[96.625000] <- Processo proc116 saindo da CPU 5.
+[96.625000] -> Processo proc32 entrando na CPU 5.
+[97.500000] <- Processo proc32 saindo da CPU 5.
+[97.500000] -> Processo proc100 entrando na CPU 5.
+[98.500000] <- Processo proc100 saindo da CPU 5.
+[98.500000] Finalização de execução do processo proc100, escrevendo na linha 9
+[98.500000] -> Processo proc122 entrando na CPU 5.
+[99.625000] <- Processo proc122 saindo da CPU 5.
+[99.625000] -> Processo proc104 entrando na CPU 5.
+[100.625000] <- Processo proc104 saindo da CPU 5.
+[100.625000] -> Processo proc108 entrando na CPU 5.
+[101.500000] <- Processo proc108 saindo da CPU 5.
+[101.500000] -> Processo proc117 entrando na CPU 5.
+[102.500000] <- Processo proc117 saindo da CPU 5.
+[102.500000] -> Processo proc46 entrando na CPU 5.
+[103.625000] <- Processo proc46 saindo da CPU 5.
+[103.625000] -> Processo proc70 entrando na CPU 5.
+[104.625000] <- Processo proc70 saindo da CPU 5.
+[104.625000] -> Processo proc141 entrando na CPU 5.
+[105.625000] <- Processo proc141 saindo da CPU 5.
+[105.625000] -> Processo proc118 entrando na CPU 5.
+[106.625000] <- Processo proc118 saindo da CPU 5.
+[106.625000] -> Processo proc24 entrando na CPU 5.
+[107.625000] <- Processo proc24 saindo da CPU 5.
+[107.625000] -> Processo proc2 entrando na CPU 5.
+[108.500000] <- Processo proc2 saindo da CPU 5.
+[108.500000] -> Processo proc17 entrando na CPU 5.
+[109.500000] <- Processo proc17 saindo da CPU 5.
+[109.500000] -> Processo proc92 entrando na CPU 5.
+[110.500000] <- Processo proc92 saindo da CPU 5.
+[110.500000] -> Processo proc60 entrando na CPU 5.
+[111.500000] <- Processo proc60 saindo da CPU 5.
+[111.500000] -> Processo proc37 entrando na CPU 5.
+[112.250000] <- Processo proc37 saindo da CPU 5.
+[112.250000] Finalização de execução do processo proc37, escrevendo na linha 10
+[112.250000] -> Processo proc111 entrando na CPU 5.
+[113.125000] <- Processo proc111 saindo da CPU 5.
+[113.125000] -> Processo proc15 entrando na CPU 5.
+[114.250000] <- Processo proc15 saindo da CPU 5.
+[114.250000] -> Processo proc76 entrando na CPU 5.
+[115.250000] <- Processo proc76 saindo da CPU 5.
+[115.250000] -> Processo proc73 entrando na CPU 5.
+[116.250000] <- Processo proc73 saindo da CPU 5.
+[116.250000] -> Processo proc49 entrando na CPU 5.
+[116.750000] <- Processo proc49 saindo da CPU 5.
+[116.750000] Finalização de execução do processo proc49, escrevendo na linha 11
+[116.750000] -> Processo proc4 entrando na CPU 5.
+[117.750000] <- Processo proc4 saindo da CPU 5.
+[117.750000] -> Processo proc41 entrando na CPU 5.
+[118.625000] <- Processo proc41 saindo da CPU 5.
+[118.625000] -> Processo proc56 entrando na CPU 5.
+[119.625000] <- Processo proc56 saindo da CPU 5.
+[119.625000] -> Processo proc59 entrando na CPU 5.
+[120.750000] <- Processo proc59 saindo da CPU 5.
+[120.750000] -> Processo proc86 entrando na CPU 5.
+[121.625000] <- Processo proc86 saindo da CPU 5.
+[121.625000] -> Processo proc68 entrando na CPU 5.
+[122.625000] <- Processo proc68 saindo da CPU 5.
+[122.625000] -> Processo proc50 entrando na CPU 5.
+[123.750000] <- Processo proc50 saindo da CPU 5.
+[123.750000] -> Processo proc146 entrando na CPU 5.
+[124.625000] <- Processo proc146 saindo da CPU 5.
+[124.625000] -> Processo proc23 entrando na CPU 5.
+[125.625000] <- Processo proc23 saindo da CPU 5.
+[125.625000] -> Processo proc9 entrando na CPU 5.
+[126.625000] <- Processo proc9 saindo da CPU 5.
+[126.625000] -> Processo proc114 entrando na CPU 5.
+[127.750000] <- Processo proc114 saindo da CPU 5.
+[127.750000] -> Processo proc38 entrando na CPU 5.
+[128.625000] <- Processo proc38 saindo da CPU 5.
+[128.625000] -> Processo proc127 entrando na CPU 5.
+[129.750000] <- Processo proc127 saindo da CPU 5.
+[129.750000] -> Processo proc123 entrando na CPU 5.
+[130.625000] <- Processo proc123 saindo da CPU 5.
+[130.625000] -> Processo proc33 entrando na CPU 5.
+[131.750000] <- Processo proc33 saindo da CPU 5.
+[131.750000] -> Processo proc75 entrando na CPU 5.
+[132.750000] <- Processo proc75 saindo da CPU 5.
+[132.750000] -> Processo proc137 entrando na CPU 5.
+[133.750000] <- Processo proc137 saindo da CPU 5.
+[133.750000] -> Processo proc78 entrando na CPU 5.
+[134.750000] <- Processo proc78 saindo da CPU 5.
+[134.750000] -> Processo proc28 entrando na CPU 5.
+[135.750000] <- Processo proc28 saindo da CPU 5.
+[135.750000] -> Processo proc135 entrando na CPU 5.
+[136.000000] <- Processo proc135 saindo da CPU 5.
+[136.000000] Finalização de execução do processo proc135, escrevendo na linha 12
+[136.000000] -> Processo proc34 entrando na CPU 5.
+[137.000000] <- Processo proc34 saindo da CPU 5.
+[137.000000] -> Processo proc27 entrando na CPU 5.
+[137.875000] <- Processo proc27 saindo da CPU 5.
+[137.875000] -> Processo proc126 entrando na CPU 5.
+[139.000000] <- Processo proc126 saindo da CPU 5.
+[139.000000] -> Processo proc95 entrando na CPU 5.
+[140.000000] <- Processo proc95 saindo da CPU 5.
+[140.000000] -> Processo proc143 entrando na CPU 5.
+[140.875000] <- Processo proc143 saindo da CPU 5.
+[140.875000] -> Processo proc52 entrando na CPU 5.
+[141.875000] <- Processo proc52 saindo da CPU 5.
+[141.875000] -> Processo proc89 entrando na CPU 5.
+[142.500000] <- Processo proc89 saindo da CPU 5.
+[142.500000] Finalização de execução do processo proc89, escrevendo na linha 13
+[142.500000] -> Processo proc147 entrando na CPU 5.
+[143.375000] <- Processo proc147 saindo da CPU 5.
+[143.375000] -> Processo proc31 entrando na CPU 5.
+[143.625000] <- Processo proc31 saindo da CPU 5.
+[143.625000] Finalização de execução do processo proc31, escrevendo na linha 14
+[143.625000] -> Processo proc11 entrando na CPU 5.
+[145.625000] <- Processo proc11 saindo da CPU 5.
+[145.625000] -> Processo proc72 entrando na CPU 5.
+[147.500000] <- Processo proc72 saindo da CPU 5.
+[147.500000] -> Processo proc130 entrando na CPU 5.
+[149.500000] <- Processo proc130 saindo da CPU 5.
+[149.500000] -> Processo proc48 entrando na CPU 5.
+[151.625000] <- Processo proc48 saindo da CPU 5.
+[151.625000] -> Processo proc131 entrando na CPU 5.
+[153.500000] <- Processo proc131 saindo da CPU 5.
+[153.500000] -> Processo proc39 entrando na CPU 5.
+[155.625000] <- Processo proc39 saindo da CPU 5.
+[155.625000] -> Processo proc84 entrando na CPU 5.
+[155.625000] <- Processo proc84 saindo da CPU 5.
+[155.625000] Finalização de execução do processo proc84, escrevendo na linha 15
+[155.625000] -> Processo proc64 entrando na CPU 5.
+[156.375000] <- Processo proc64 saindo da CPU 5.
+[156.375000] Finalização de execução do processo proc64, escrevendo na linha 16
+[156.375000] -> Processo proc91 entrando na CPU 5.
+[158.375000] <- Processo proc91 saindo da CPU 5.
+[158.375000] -> Processo proc19 entrando na CPU 5.
+[160.375000] <- Processo proc19 saindo da CPU 5.
+[160.375000] -> Processo proc129 entrando na CPU 5.
+[161.500000] <- Processo proc129 saindo da CPU 5.
+[161.500000] Finalização de execução do processo proc129, escrevendo na linha 17
+[161.500000] -> Processo proc103 entrando na CPU 5.
+[161.750000] <- Processo proc103 saindo da CPU 5.
+[161.750000] Finalização de execução do processo proc103, escrevendo na linha 18
+[161.750000] -> Processo proc30 entrando na CPU 5.
+[163.875000] <- Processo proc30 saindo da CPU 5.
+[163.875000] -> Processo proc106 entrando na CPU 5.
+[165.125000] <- Processo proc106 saindo da CPU 5.
+[165.125000] Finalização de execução do processo proc106, escrevendo na linha 19
+[165.125000] -> Processo proc42 entrando na CPU 5.
+[167.125000] <- Processo proc42 saindo da CPU 5.
+[167.125000] -> Processo proc57 entrando na CPU 5.
+[169.125000] <- Processo proc57 saindo da CPU 5.
+[169.125000] -> Processo proc66 entrando na CPU 5.
+[171.125000] <- Processo proc66 saindo da CPU 5.
+[171.125000] -> Processo proc40 entrando na CPU 5.
+[173.000000] <- Processo proc40 saindo da CPU 5.
+[173.000000] -> Processo proc133 entrando na CPU 5.
+[175.125000] <- Processo proc133 saindo da CPU 5.
+[175.125000] -> Processo proc109 entrando na CPU 5.
+[177.125000] <- Processo proc109 saindo da CPU 5.
+[177.125000] -> Processo proc142 entrando na CPU 5.
+[178.250000] <- Processo proc142 saindo da CPU 5.
+[178.250000] Finalização de execução do processo proc142, escrevendo na linha 20
+[178.250000] -> Processo proc45 entrando na CPU 5.
+[180.125000] <- Processo proc45 saindo da CPU 5.
+[180.125000] -> Processo proc98 entrando na CPU 5.
+[182.250000] <- Processo proc98 saindo da CPU 5.
+[182.250000] -> Processo proc63 entrando na CPU 5.
+[184.125000] <- Processo proc63 saindo da CPU 5.
+[184.125000] -> Processo proc65 entrando na CPU 5.
+[186.125000] <- Processo proc65 saindo da CPU 5.
+[186.125000] -> Processo proc93 entrando na CPU 5.
+[188.125000] <- Processo proc93 saindo da CPU 5.
+[188.125000] -> Processo proc82 entrando na CPU 5.
+[190.250000] <- Processo proc82 saindo da CPU 5.
+[190.250000] -> Processo proc13 entrando na CPU 5.
+[192.250000] <- Processo proc13 saindo da CPU 5.
+[192.250000] -> Processo proc20 entrando na CPU 5.
+[194.250000] <- Processo proc20 saindo da CPU 5.
+[194.250000] -> Processo proc145 entrando na CPU 5.
+[196.250000] <- Processo proc145 saindo da CPU 5.
+[196.250000] -> Processo proc83 entrando na CPU 5.
+[198.250000] <- Processo proc83 saindo da CPU 5.
+[198.250000] -> Processo proc8 entrando na CPU 5.
+[200.125000] <- Processo proc8 saindo da CPU 5.
+[200.125000] -> Processo proc112 entrando na CPU 5.
+[202.125000] <- Processo proc112 saindo da CPU 5.
+[202.125000] -> Processo proc26 entrando na CPU 5.
+[202.625000] <- Processo proc26 saindo da CPU 5.
+[202.625000] Finalização de execução do processo proc26, escrevendo na linha 21
+[202.625000] -> Processo proc124 entrando na CPU 5.
+[204.500000] <- Processo proc124 saindo da CPU 5.
+[204.500000] -> Processo proc3 entrando na CPU 5.
+[206.500000] <- Processo proc3 saindo da CPU 5.
+[206.500000] -> Processo proc119 entrando na CPU 5.
+[208.625000] <- Processo proc119 saindo da CPU 5.
+[208.625000] -> Processo proc125 entrando na CPU 5.
+[210.625000] <- Processo proc125 saindo da CPU 5.
+[210.625000] -> Processo proc69 entrando na CPU 5.
+[210.750000] <- Processo proc69 saindo da CPU 5.
+[210.750000] Finalização de execução do processo proc69, escrevendo na linha 22
+[210.750000] -> Processo proc120 entrando na CPU 5.
+[212.625000] <- Processo proc120 saindo da CPU 5.
+[212.625000] -> Processo proc87 entrando na CPU 5.
+[214.625000] <- Processo proc87 saindo da CPU 5.
+[214.625000] -> Processo proc136 entrando na CPU 5.
+[216.750000] <- Processo proc136 saindo da CPU 5.
+[216.750000] -> Processo proc102 entrando na CPU 5.
+[218.750000] <- Processo proc102 saindo da CPU 5.
+[218.750000] -> Processo proc61 entrando na CPU 5.
+[220.625000] <- Processo proc61 saindo da CPU 5.
+[220.625000] -> Processo proc148 entrando na CPU 5.
+[222.750000] <- Processo proc148 saindo da CPU 5.
+[222.750000] -> Processo proc53 entrando na CPU 5.
+[224.625000] <- Processo proc53 saindo da CPU 5.
+[224.625000] -> Processo proc115 entrando na CPU 5.
+[224.875000] <- Processo proc115 saindo da CPU 5.
+[224.875000] Finalização de execução do processo proc115, escrevendo na linha 23
+[224.875000] -> Processo proc71 entrando na CPU 5.
+[225.875000] <- Processo proc71 saindo da CPU 5.
+[225.875000] Finalização de execução do processo proc71, escrevendo na linha 24
+[225.875000] -> Processo proc44 entrando na CPU 5.
+[227.375000] <- Processo proc44 saindo da CPU 5.
+[227.375000] Finalização de execução do processo proc44, escrevendo na linha 25
+[227.375000] -> Processo proc16 entrando na CPU 5.
+[229.375000] <- Processo proc16 saindo da CPU 5.
+[229.375000] -> Processo proc0 entrando na CPU 5.
+[231.250000] <- Processo proc0 saindo da CPU 5.
+[231.250000] -> Processo proc105 entrando na CPU 5.
+[233.250000] <- Processo proc105 saindo da CPU 5.
+[233.250000] -> Processo proc121 entrando na CPU 5.
+[234.125000] <- Processo proc121 saindo da CPU 5.
+[234.125000] Finalização de execução do processo proc121, escrevendo na linha 26
+[234.125000] -> Processo proc47 entrando na CPU 5.
+[234.250000] <- Processo proc47 saindo da CPU 5.
+[234.250000] Finalização de execução do processo proc47, escrevendo na linha 27
+[234.250000] -> Processo proc67 entrando na CPU 5.
+[236.250000] <- Processo proc67 saindo da CPU 5.
+[236.250000] -> Processo proc138 entrando na CPU 5.
+[238.250000] <- Processo proc138 saindo da CPU 5.
+[238.250000] -> Processo proc140 entrando na CPU 5.
+[240.125000] <- Processo proc140 saindo da CPU 5.
+[240.125000] -> Processo proc1 entrando na CPU 5.
+[242.125000] <- Processo proc1 saindo da CPU 5.
+[242.125000] -> Processo proc7 entrando na CPU 5.
+[243.625000] <- Processo proc7 saindo da CPU 5.
+[243.625000] Finalização de execução do processo proc7, escrevendo na linha 28
+[243.625000] -> Processo proc97 entrando na CPU 5.
+[245.625000] <- Processo proc97 saindo da CPU 5.
+[245.625000] -> Processo proc99 entrando na CPU 5.
+[247.625000] <- Processo proc99 saindo da CPU 5.
+[247.625000] -> Processo proc58 entrando na CPU 5.
+[249.500000] <- Processo proc58 saindo da CPU 5.
+[249.500000] -> Processo proc36 entrando na CPU 5.
+[249.625000] <- Processo proc36 saindo da CPU 5.
+[249.625000] Finalização de execução do processo proc36, escrevendo na linha 29
+[249.625000] -> Processo proc88 entrando na CPU 5.
+[251.500000] <- Processo proc88 saindo da CPU 5.
+[251.500000] -> Processo proc101 entrando na CPU 5.
+[252.250000] <- Processo proc101 saindo da CPU 5.
+[252.250000] Finalização de execução do processo proc101, escrevendo na linha 30
+[252.250000] -> Processo proc25 entrando na CPU 5.
+[254.250000] <- Processo proc25 saindo da CPU 5.
+[254.250000] -> Processo proc12 entrando na CPU 5.
+[256.375000] <- Processo proc12 saindo da CPU 5.
+[256.375000] -> Processo proc128 entrando na CPU 5.
+[258.250000] <- Processo proc128 saindo da CPU 5.
+[258.250000] -> Processo proc29 entrando na CPU 5.
+[260.125000] <- Processo proc29 saindo da CPU 5.
+[260.125000] Finalização de execução do processo proc29, escrevendo na linha 31
+[260.125000] -> Processo proc96 entrando na CPU 5.
+[262.000000] <- Processo proc96 saindo da CPU 5.
+[262.000000] -> Processo proc62 entrando na CPU 5.
+[264.125000] <- Processo proc62 saindo da CPU 5.
+[264.125000] -> Processo proc139 entrando na CPU 5.
+[266.125000] <- Processo proc139 saindo da CPU 5.
+[266.125000] -> Processo proc43 entrando na CPU 5.
+[268.000000] <- Processo proc43 saindo da CPU 5.
+[268.000000] Finalização de execução do processo proc43, escrevendo na linha 32
+[268.000000] -> Processo proc94 entrando na CPU 5.
+[270.000000] <- Processo proc94 saindo da CPU 5.
+[270.000000] -> Processo proc80 entrando na CPU 5.
+[271.875000] <- Processo proc80 saindo da CPU 5.
+[271.875000] -> Processo proc90 entrando na CPU 5.
+[273.875000] <- Processo proc90 saindo da CPU 5.
+[273.875000] -> Processo proc35 entrando na CPU 5.
+[276.000000] <- Processo proc35 saindo da CPU 5.
+[276.000000] -> Processo proc132 entrando na CPU 5.
+[278.000000] <- Processo proc132 saindo da CPU 5.
+[278.000000] -> Processo proc21 entrando na CPU 5.
+[279.875000] <- Processo proc21 saindo da CPU 5.
+[279.875000] -> Processo proc5 entrando na CPU 5.
+[282.000000] <- Processo proc5 saindo da CPU 5.
+[282.000000] -> Processo proc14 entrando na CPU 5.
+[284.000000] <- Processo proc14 saindo da CPU 5.
+[284.000000] -> Processo proc22 entrando na CPU 5.
+[284.625000] <- Processo proc22 saindo da CPU 5.
+[284.625000] Finalização de execução do processo proc22, escrevendo na linha 33
+[284.625000] -> Processo proc79 entrando na CPU 5.
+[286.625000] <- Processo proc79 saindo da CPU 5.
+[286.625000] -> Processo proc55 entrando na CPU 5.
+[288.250000] <- Processo proc55 saindo da CPU 5.
+[288.250000] Finalização de execução do processo proc55, escrevendo na linha 34
+[288.250000] -> Processo proc149 entrando na CPU 5.
+[289.500000] <- Processo proc149 saindo da CPU 5.
+[289.500000] Finalização de execução do processo proc149, escrevendo na linha 35
+[289.500000] -> Processo proc77 entrando na CPU 5.
+[291.500000] <- Processo proc77 saindo da CPU 5.
+[291.500000] -> Processo proc81 entrando na CPU 5.
+[293.500000] <- Processo proc81 saindo da CPU 5.
+[293.500000] -> Processo proc10 entrando na CPU 5.
+[295.500000] <- Processo proc10 saindo da CPU 5.
+[295.500000] -> Processo proc107 entrando na CPU 5.
+[297.375000] <- Processo proc107 saindo da CPU 5.
+[297.375000] -> Processo proc134 entrando na CPU 5.
+[299.375000] <- Processo proc134 saindo da CPU 5.
+[299.375000] -> Processo proc116 entrando na CPU 5.
+[300.875000] <- Processo proc116 saindo da CPU 5.
+[300.875000] Finalização de execução do processo proc116, escrevendo na linha 36
+[300.875000] -> Processo proc32 entrando na CPU 5.
+[302.750000] <- Processo proc32 saindo da CPU 5.
+[302.750000] -> Processo proc122 entrando na CPU 5.
+[304.875000] <- Processo proc122 saindo da CPU 5.
+[304.875000] -> Processo proc104 entrando na CPU 5.
+[306.750000] <- Processo proc104 saindo da CPU 5.
+[306.750000] -> Processo proc108 entrando na CPU 5.
+[308.750000] <- Processo proc108 saindo da CPU 5.
+[308.750000] -> Processo proc117 entrando na CPU 5.
+[310.875000] <- Processo proc117 saindo da CPU 5.
+[310.875000] -> Processo proc46 entrando na CPU 5.
+[312.750000] <- Processo proc46 saindo da CPU 5.
+[312.750000] -> Processo proc70 entrando na CPU 5.
+[314.750000] <- Processo proc70 saindo da CPU 5.
+[314.750000] -> Processo proc141 entrando na CPU 5.
+[316.750000] <- Processo proc141 saindo da CPU 5.
+[316.750000] -> Processo proc118 entrando na CPU 5.
+[318.750000] <- Processo proc118 saindo da CPU 5.
+[318.750000] -> Processo proc24 entrando na CPU 5.
+[320.750000] <- Processo proc24 saindo da CPU 5.
+[320.750000] -> Processo proc2 entrando na CPU 5.
+[322.250000] <- Processo proc2 saindo da CPU 5.
+[322.250000] Finalização de execução do processo proc2, escrevendo na linha 37
+[322.250000] -> Processo proc17 entrando na CPU 5.
+[324.125000] <- Processo proc17 saindo da CPU 5.
+[324.125000] -> Processo proc92 entrando na CPU 5.
+[326.250000] <- Processo proc92 saindo da CPU 5.
+[326.250000] -> Processo proc60 entrando na CPU 5.
+[326.250000] <- Processo proc60 saindo da CPU 5.
+[326.250000] Finalização de execução do processo proc60, escrevendo na linha 38
+[326.250000] -> Processo proc111 entrando na CPU 5.
+[328.250000] <- Processo proc111 saindo da CPU 5.
+[328.250000] -> Processo proc15 entrando na CPU 5.
+[330.000000] <- Processo proc15 saindo da CPU 5.
+[330.000000] Finalização de execução do processo proc15, escrevendo na linha 39
+[330.000000] -> Processo proc76 entrando na CPU 5.
+[331.875000] <- Processo proc76 saindo da CPU 5.
+[331.875000] -> Processo proc73 entrando na CPU 5.
+[334.000000] <- Processo proc73 saindo da CPU 5.
+[334.000000] -> Processo proc4 entrando na CPU 5.
+[335.875000] <- Processo proc4 saindo da CPU 5.
+[335.875000] -> Processo proc41 entrando na CPU 5.
+[338.000000] <- Processo proc41 saindo da CPU 5.
+[338.000000] -> Processo proc56 entrando na CPU 5.
+[340.000000] <- Processo proc56 saindo da CPU 5.
+[340.000000] -> Processo proc59 entrando na CPU 5.
+[341.375000] <- Processo proc59 saindo da CPU 5.
+[341.375000] Finalização de execução do processo proc59, escrevendo na linha 40
+[341.375000] -> Processo proc86 entrando na CPU 5.
+[343.375000] <- Processo proc86 saindo da CPU 5.
+[343.375000] -> Processo proc68 entrando na CPU 5.
+[345.125000] <- Processo proc68 saindo da CPU 5.
+[345.125000] Finalização de execução do processo proc68, escrevendo na linha 41
+[345.125000] -> Processo proc50 entrando na CPU 5.
+[346.000000] <- Processo proc50 saindo da CPU 5.
+[346.000000] Finalização de execução do processo proc50, escrevendo na linha 42
+[346.000000] -> Processo proc146 entrando na CPU 5.
+[347.750000] <- Processo proc146 saindo da CPU 5.
+[347.750000] Finalização de execução do processo proc146, escrevendo na linha 43
+[347.750000] -> Processo proc23 entrando na CPU 5.
+[349.625000] <- Processo proc23 saindo da CPU 5.
+[349.625000] -> Processo proc9 entrando na CPU 5.
+[351.625000] <- Processo proc9 saindo da CPU 5.
+[351.625000] -> Processo proc114 entrando na CPU 5.
+[353.750000] <- Processo proc114 saindo da CPU 5.
+[353.750000] -> Processo proc38 entrando na CPU 5.
+[355.750000] <- Processo proc38 saindo da CPU 5.
+[355.750000] -> Processo proc127 entrando na CPU 5.
+[356.750000] <- Processo proc127 saindo da CPU 5.
+[356.750000] Finalização de execução do processo proc127, escrevendo na linha 44
+[356.750000] -> Processo proc123 entrando na CPU 5.
+[358.750000] <- Processo proc123 saindo da CPU 5.
+[358.750000] -> Processo proc33 entrando na CPU 5.
+[360.750000] <- Processo proc33 saindo da CPU 5.
+[360.750000] -> Processo proc75 entrando na CPU 5.
+[361.875000] <- Processo proc75 saindo da CPU 5.
+[361.875000] Finalização de execução do processo proc75, escrevendo na linha 45
+[361.875000] -> Processo proc137 entrando na CPU 5.
+[363.750000] <- Processo proc137 saindo da CPU 5.
+[363.750000] -> Processo proc78 entrando na CPU 5.
+[365.875000] <- Processo proc78 saindo da CPU 5.
+[365.875000] -> Processo proc28 entrando na CPU 5.
+[366.875000] <- Processo proc28 saindo da CPU 5.
+[366.875000] Finalização de execução do processo proc28, escrevendo na linha 46
+[366.875000] -> Processo proc34 entrando na CPU 5.
+[368.875000] <- Processo proc34 saindo da CPU 5.
+[368.875000] -> Processo proc27 entrando na CPU 5.
+[370.875000] <- Processo proc27 saindo da CPU 5.
+[370.875000] -> Processo proc126 entrando na CPU 5.
+[372.750000] <- Processo proc126 saindo da CPU 4.
+[372.750000] -> Processo proc95 entrando na CPU 4.
+[374.750000] <- Processo proc95 saindo da CPU 4.
+[374.750000] -> Processo proc143 entrando na CPU 4.
+[376.750000] <- Processo proc143 saindo da CPU 1.
+[376.750000] -> Processo proc52 entrando na CPU 1.
+[377.375000] <- Processo proc52 saindo da CPU 1.
+[377.375000] Finalização de execução do processo proc52, escrevendo na linha 47
+[377.375000] -> Processo proc147 entrando na CPU 1.
+[378.500000] <- Processo proc147 saindo da CPU 1.
+[378.500000] Finalização de execução do processo proc147, escrevendo na linha 48
+[378.500000] -> Processo proc11 entrando na CPU 1.
+[381.375000] <- Processo proc11 saindo da CPU 1.
+[381.375000] -> Processo proc72 entrando na CPU 1.
+[384.375000] <- Processo proc72 saindo da CPU 1.
+[384.375000] -> Processo proc130 entrando na CPU 1.
+[386.250000] <- Processo proc130 saindo da CPU 1.
+[386.250000] Finalização de execução do processo proc130, escrevendo na linha 49
+[386.250000] -> Processo proc48 entrando na CPU 1.
+[389.125000] <- Processo proc48 saindo da CPU 3.
+[389.125000] -> Processo proc131 entrando na CPU 3.
+[392.125000] <- Processo proc131 saindo da CPU 3.
+[392.125000] -> Processo proc39 entrando na CPU 3.
+[394.875000] <- Processo proc39 saindo da CPU 3.
+[394.875000] Finalização de execução do processo proc39, escrevendo na linha 50
+[394.875000] -> Processo proc91 entrando na CPU 3.
+[395.250000] <- Processo proc91 saindo da CPU 3.
+[395.250000] Finalização de execução do processo proc91, escrevendo na linha 51
+[395.250000] -> Processo proc19 entrando na CPU 3.
+[398.375000] <- Processo proc19 saindo da CPU 3.
+[398.375000] -> Processo proc30 entrando na CPU 3.
+[400.000000] <- Processo proc30 saindo da CPU 3.
+[400.000000] Finalização de execução do processo proc30, escrevendo na linha 52
+[400.000000] -> Processo proc42 entrando na CPU 3.
+[400.875000] <- Processo proc42 saindo da CPU 3.
+[400.875000] Finalização de execução do processo proc42, escrevendo na linha 53
+[400.875000] -> Processo proc57 entrando na CPU 3.
+[402.000000] <- Processo proc57 saindo da CPU 3.
+[402.000000] Finalização de execução do processo proc57, escrevendo na linha 54
+[402.000000] -> Processo proc66 entrando na CPU 3.
+[405.000000] <- Processo proc66 saindo da CPU 3.
+[405.000000] -> Processo proc40 entrando na CPU 3.
+[407.875000] <- Processo proc40 saindo da CPU 3.
+[407.875000] -> Processo proc133 entrando na CPU 3.
+[409.875000] <- Processo proc133 saindo da CPU 3.
+[409.875000] Finalização de execução do processo proc133, escrevendo na linha 55
+[409.875000] -> Processo proc109 entrando na CPU 3.
+[411.000000] <- Processo proc109 saindo da CPU 3.
+[411.000000] Finalização de execução do processo proc109, escrevendo na linha 56
+[411.000000] -> Processo proc45 entrando na CPU 3.
+[414.000000] <- Processo proc45 saindo da CPU 3.
+[414.000000] -> Processo proc98 entrando na CPU 3.
+[416.000000] <- Processo proc98 saindo da CPU 3.
+[416.000000] Finalização de execução do processo proc98, escrevendo na linha 57
+[416.000000] -> Processo proc63 entrando na CPU 3.
+[419.000000] <- Processo proc63 saindo da CPU 3.
+[419.000000] -> Processo proc65 entrando na CPU 3.
+[421.875000] <- Processo proc65 saindo da CPU 3.
+[421.875000] -> Processo proc93 entrando na CPU 3.
+[425.000000] <- Processo proc93 saindo da CPU 3.
+[425.000000] -> Processo proc82 entrando na CPU 3.
+[428.000000] <- Processo proc82 saindo da CPU 3.
+[428.000000] -> Processo proc13 entrando na CPU 3.
+[431.000000] <- Processo proc13 saindo da CPU 3.
+[431.000000] -> Processo proc20 entrando na CPU 3.
+[433.875000] <- Processo proc20 saindo da CPU 3.
+[433.875000] -> Processo proc145 entrando na CPU 3.
+[436.875000] <- Processo proc145 saindo da CPU 3.
+[436.875000] -> Processo proc83 entrando na CPU 3.
+[439.875000] <- Processo proc83 saindo da CPU 3.
+[439.875000] -> Processo proc8 entrando na CPU 3.
+[443.000000] <- Processo proc8 saindo da CPU 3.
+[443.000000] -> Processo proc112 entrando na CPU 3.
+[446.000000] <- Processo proc112 saindo da CPU 3.
+[446.000000] -> Processo proc124 entrando na CPU 3.
+[447.500000] <- Processo proc124 saindo da CPU 3.
+[447.500000] Finalização de execução do processo proc124, escrevendo na linha 58
+[447.500000] -> Processo proc3 entrando na CPU 3.
+[450.625000] <- Processo proc3 saindo da CPU 3.
+[450.625000] -> Processo proc119 entrando na CPU 3.
+[453.625000] <- Processo proc119 saindo da CPU 3.
+[453.625000] -> Processo proc125 entrando na CPU 3.
+[456.625000] <- Processo proc125 saindo da CPU 3.
+[456.625000] -> Processo proc120 entrando na CPU 3.
+[457.500000] <- Processo proc120 saindo da CPU 3.
+[457.500000] Finalização de execução do processo proc120, escrevendo na linha 59
+[457.500000] -> Processo proc87 entrando na CPU 3.
+[459.500000] <- Processo proc87 saindo da CPU 3.
+[459.500000] Finalização de execução do processo proc87, escrevendo na linha 60
+[459.500000] -> Processo proc136 entrando na CPU 3.
+[462.375000] <- Processo proc136 saindo da CPU 3.
+[462.375000] -> Processo proc102 entrando na CPU 3.
+[465.375000] <- Processo proc102 saindo da CPU 3.
+[465.375000] -> Processo proc61 entrando na CPU 3.
+[467.375000] <- Processo proc61 saindo da CPU 3.
+[467.375000] Finalização de execução do processo proc61, escrevendo na linha 61
+[467.375000] -> Processo proc148 entrando na CPU 3.
+[470.250000] <- Processo proc148 saindo da CPU 3.
+[470.250000] -> Processo proc53 entrando na CPU 3.
+[473.375000] <- Processo proc53 saindo da CPU 3.
+[473.375000] -> Processo proc16 entrando na CPU 3.
+[473.875000] <- Processo proc16 saindo da CPU 3.
+[473.875000] Finalização de execução do processo proc16, escrevendo na linha 62
+[473.875000] -> Processo proc0 entrando na CPU 3.
+[474.000000] <- Processo proc0 saindo da CPU 1.
+[474.000000] Finalização de execução do processo proc0, escrevendo na linha 63
+[474.000000] -> Processo proc105 entrando na CPU 1.
+[476.875000] <- Processo proc105 saindo da CPU 1.
+[476.875000] -> Processo proc67 entrando na CPU 1.
+[479.875000] <- Processo proc67 saindo da CPU 1.
+[479.875000] -> Processo proc138 entrando na CPU 1.
+[481.375000] <- Processo proc138 saindo da CPU 1.
+[481.375000] Finalização de execução do processo proc138, escrevendo na linha 64
+[481.375000] -> Processo proc140 entrando na CPU 1.
+[484.000000] <- Processo proc140 saindo da CPU 1.
+[484.000000] Finalização de execução do processo proc140, escrevendo na linha 65
+[484.000000] -> Processo proc1 entrando na CPU 1.
+[486.875000] <- Processo proc1 saindo da CPU 1.
+[486.875000] Finalização de execução do processo proc1, escrevendo na linha 66
+[486.875000] -> Processo proc97 entrando na CPU 1.
+[489.750000] <- Processo proc97 saindo da CPU 1.
+[489.750000] -> Processo proc99 entrando na CPU 1.
+[491.875000] <- Processo proc99 saindo da CPU 0.
+[491.875000] Finalização de execução do processo proc99, escrevendo na linha 67
+[491.875000] -> Processo proc58 entrando na CPU 0.
+[493.500000] <- Processo proc58 saindo da CPU 0.
+[493.500000] Finalização de execução do processo proc58, escrevendo na linha 68
+[493.500000] -> Processo proc88 entrando na CPU 0.
+[494.500000] <- Processo proc88 saindo da CPU 0.
+[494.500000] Finalização de execução do processo proc88, escrevendo na linha 69
+[494.500000] -> Processo proc25 entrando na CPU 0.
+[497.500000] <- Processo proc25 saindo da CPU 0.
+[497.500000] -> Processo proc12 entrando na CPU 0.
+[500.250000] <- Processo proc12 saindo da CPU 0.
+[500.250000] Finalização de execução do processo proc12, escrevendo na linha 70
+[500.250000] -> Processo proc128 entrando na CPU 0.
+[503.250000] <- Processo proc128 saindo da CPU 0.
+[503.250000] -> Processo proc96 entrando na CPU 0.
+[506.125000] <- Processo proc96 saindo da CPU 0.
+[506.125000] -> Processo proc62 entrando na CPU 0.
+[508.125000] <- Processo proc62 saindo da CPU 0.
+[508.125000] Finalização de execução do processo proc62, escrevendo na linha 71
+[508.125000] -> Processo proc139 entrando na CPU 0.
+[510.375000] <- Processo proc139 saindo da CPU 0.
+[510.375000] Finalização de execução do processo proc139, escrevendo na linha 72
+[510.375000] -> Processo proc94 entrando na CPU 0.
+[513.375000] <- Processo proc94 saindo da CPU 0.
+[513.375000] -> Processo proc80 entrando na CPU 0.
+[516.375000] <- Processo proc80 saindo da CPU 0.
+[516.375000] -> Processo proc90 entrando na CPU 0.
+[519.375000] <- Processo proc90 saindo da CPU 0.
+[519.375000] -> Processo proc35 entrando na CPU 0.
+[522.250000] <- Processo proc35 saindo da CPU 0.
+[522.250000] -> Processo proc132 entrando na CPU 0.
+[525.250000] <- Processo proc132 saindo da CPU 0.
+[525.250000] Finalização de execução do processo proc132, escrevendo na linha 73
+[525.250000] -> Processo proc21 entrando na CPU 0.
+[528.125000] <- Processo proc21 saindo da CPU 0.
+[528.125000] -> Processo proc5 entrando na CPU 0.
+[531.250000] <- Processo proc5 saindo da CPU 0.
+[531.250000] -> Processo proc14 entrando na CPU 0.
+[534.125000] <- Processo proc14 saindo da CPU 0.
+[534.125000] -> Processo proc79 entrando na CPU 0.
+[537.125000] <- Processo proc79 saindo da CPU 0.
+[537.125000] -> Processo proc77 entrando na CPU 0.
+[540.250000] <- Processo proc77 saindo da CPU 0.
+[540.250000] -> Processo proc81 entrando na CPU 0.
+[543.250000] <- Processo proc81 saindo da CPU 0.
+[543.250000] -> Processo proc10 entrando na CPU 0.
+[543.750000] <- Processo proc10 saindo da CPU 0.
+[543.750000] Finalização de execução do processo proc10, escrevendo na linha 74
+[543.750000] -> Processo proc107 entrando na CPU 0.
+[546.625000] <- Processo proc107 saindo da CPU 0.
+[546.625000] -> Processo proc134 entrando na CPU 0.
+[549.750000] <- Processo proc134 saindo da CPU 0.
+[549.750000] -> Processo proc32 entrando na CPU 0.
+[552.625000] <- Processo proc32 saindo da CPU 0.
+[552.625000] -> Processo proc122 entrando na CPU 0.
+[553.625000] <- Processo proc122 saindo da CPU 0.
+[553.625000] Finalização de execução do processo proc122, escrevendo na linha 75
+[553.625000] -> Processo proc104 entrando na CPU 0.
+[556.625000] <- Processo proc104 saindo da CPU 0.
+[556.625000] -> Processo proc108 entrando na CPU 0.
+[559.500000] <- Processo proc108 saindo da CPU 0.
+[559.500000] -> Processo proc117 entrando na CPU 0.
+[562.625000] <- Processo proc117 saindo da CPU 0.
+[562.625000] -> Processo proc46 entrando na CPU 0.
+[563.250000] <- Processo proc46 saindo da CPU 5.
+[563.250000] Finalização de execução do processo proc46, escrevendo na linha 76
+[563.250000] -> Processo proc70 entrando na CPU 5.
+[566.250000] <- Processo proc70 saindo da CPU 5.
+[566.250000] -> Processo proc141 entrando na CPU 5.
+[568.875000] <- Processo proc141 saindo da CPU 5.
+[568.875000] Finalização de execução do processo proc141, escrevendo na linha 77
+[568.875000] -> Processo proc118 entrando na CPU 5.
+[571.875000] <- Processo proc118 saindo da CPU 5.
+[571.875000] -> Processo proc24 entrando na CPU 5.
+[574.750000] <- Processo proc24 saindo da CPU 5.
+[574.750000] -> Processo proc17 entrando na CPU 5.
+[577.750000] <- Processo proc17 saindo da CPU 5.
+[577.750000] -> Processo proc92 entrando na CPU 5.
+[580.000000] <- Processo proc92 saindo da CPU 5.
+[580.000000] Finalização de execução do processo proc92, escrevendo na linha 78
+[580.000000] -> Processo proc111 entrando na CPU 5.
+[583.000000] <- Processo proc111 saindo da CPU 5.
+[583.000000] -> Processo proc76 entrando na CPU 5.
+[583.500000] <- Processo proc76 saindo da CPU 5.
+[583.500000] Finalização de execução do processo proc76, escrevendo na linha 79
+[583.500000] -> Processo proc73 entrando na CPU 5.
+[586.375000] <- Processo proc73 saindo da CPU 5.
+[586.375000] -> Processo proc4 entrando na CPU 5.
+[589.375000] <- Processo proc4 saindo da CPU 5.
+[589.375000] -> Processo proc41 entrando na CPU 5.
+[592.375000] <- Processo proc41 saindo da CPU 5.
+[592.375000] -> Processo proc56 entrando na CPU 5.
+[595.500000] <- Processo proc56 saindo da CPU 5.
+[595.500000] -> Processo proc86 entrando na CPU 5.
+[598.500000] <- Processo proc86 saindo da CPU 5.
+[598.500000] -> Processo proc23 entrando na CPU 5.
+[599.125000] <- Processo proc23 saindo da CPU 5.
+[599.125000] Finalização de execução do processo proc23, escrevendo na linha 80
+[599.125000] -> Processo proc9 entrando na CPU 5.
+[602.125000] <- Processo proc9 saindo da CPU 5.
+[602.125000] -> Processo proc114 entrando na CPU 5.
+[605.125000] <- Processo proc114 saindo da CPU 5.
+[605.125000] -> Processo proc38 entrando na CPU 5.
+[608.000000] <- Processo proc38 saindo da CPU 5.
+[608.000000] -> Processo proc123 entrando na CPU 5.
+[610.750000] <- Processo proc123 saindo da CPU 5.
+[610.750000] Finalização de execução do processo proc123, escrevendo na linha 81
+[610.750000] -> Processo proc33 entrando na CPU 5.
+[613.750000] <- Processo proc33 saindo da CPU 5.
+[613.750000] -> Processo proc137 entrando na CPU 5.
+[616.625000] <- Processo proc137 saindo da CPU 5.
+[616.625000] -> Processo proc78 entrando na CPU 5.
+[619.750000] <- Processo proc78 saindo da CPU 5.
+[619.750000] -> Processo proc34 entrando na CPU 5.
+[620.500000] <- Processo proc34 saindo da CPU 5.
+[620.500000] Finalização de execução do processo proc34, escrevendo na linha 82
+[620.500000] -> Processo proc27 entrando na CPU 5.
+[623.500000] <- Processo proc27 saindo da CPU 5.
+[623.500000] -> Processo proc126 entrando na CPU 5.
+[625.625000] <- Processo proc126 saindo da CPU 5.
+[625.625000] Finalização de execução do processo proc126, escrevendo na linha 83
+[625.625000] -> Processo proc95 entrando na CPU 5.
+[628.625000] <- Processo proc95 saindo da CPU 5.
+[628.625000] -> Processo proc143 entrando na CPU 5.
+[629.250000] <- Processo proc143 saindo da CPU 5.
+[629.250000] Finalização de execução do processo proc143, escrevendo na linha 84
+[629.250000] -> Processo proc11 entrando na CPU 5.
+[631.250000] <- Processo proc11 saindo da CPU 5.
+[631.250000] Finalização de execução do processo proc11, escrevendo na linha 85
+[631.250000] -> Processo proc72 entrando na CPU 5.
+[632.750000] <- Processo proc72 saindo da CPU 5.
+[632.750000] Finalização de execução do processo proc72, escrevendo na linha 86
+[632.750000] -> Processo proc48 entrando na CPU 5.
+[636.750000] <- Processo proc48 saindo da CPU 5.
+[636.750000] -> Processo proc48 entrando na CPU 5.
+[636.875000] <- Processo proc48 saindo da CPU 5.
+[636.875000] Finalização de execução do processo proc48, escrevendo na linha 87
+[636.875000] -> Processo proc131 entrando na CPU 5.
+[639.875000] <- Processo proc131 saindo da CPU 5.
+[639.875000] Finalização de execução do processo proc131, escrevendo na linha 88
+[639.875000] -> Processo proc19 entrando na CPU 5.
+[643.375000] <- Processo proc19 saindo da CPU 5.
+[643.375000] Finalização de execução do processo proc19, escrevendo na linha 89
+[643.375000] -> Processo proc66 entrando na CPU 5.
+[644.000000] <- Processo proc66 saindo da CPU 5.
+[644.000000] Finalização de execução do processo proc66, escrevendo na linha 90
+[644.000000] -> Processo proc40 entrando na CPU 5.
+[644.875000] <- Processo proc40 saindo da CPU 5.
+[644.875000] Finalização de execução do processo proc40, escrevendo na linha 91
+[644.875000] -> Processo proc45 entrando na CPU 5.
+[647.375000] <- Processo proc45 saindo da CPU 5.
+[647.375000] Finalização de execução do processo proc45, escrevendo na linha 92
+[647.375000] -> Processo proc63 entrando na CPU 5.
+[650.000000] <- Processo proc63 saindo da CPU 5.
+[650.000000] Finalização de execução do processo proc63, escrevendo na linha 93
+[650.000000] -> Processo proc65 entrando na CPU 5.
+[651.875000] <- Processo proc65 saindo da CPU 5.
+[651.875000] Finalização de execução do processo proc65, escrevendo na linha 94
+[651.875000] -> Processo proc93 entrando na CPU 5.
+[653.000000] <- Processo proc93 saindo da CPU 5.
+[653.000000] Finalização de execução do processo proc93, escrevendo na linha 95
+[653.000000] -> Processo proc82 entrando na CPU 5.
+[657.000000] <- Processo proc82 saindo da CPU 5.
+[657.000000] -> Processo proc82 entrando na CPU 5.
+[657.125000] <- Processo proc82 saindo da CPU 5.
+[657.125000] Finalização de execução do processo proc82, escrevendo na linha 96
+[657.125000] -> Processo proc13 entrando na CPU 5.
+[659.375000] <- Processo proc13 saindo da CPU 5.
+[659.375000] Finalização de execução do processo proc13, escrevendo na linha 97
+[659.375000] -> Processo proc20 entrando na CPU 5.
+[659.500000] <- Processo proc20 saindo da CPU 5.
+[659.500000] Finalização de execução do processo proc20, escrevendo na linha 98
+[659.500000] -> Processo proc145 entrando na CPU 5.
+[663.125000] <- Processo proc145 saindo da CPU 5.
+[663.125000] Finalização de execução do processo proc145, escrevendo na linha 99
+[663.125000] -> Processo proc83 entrando na CPU 5.
+[665.250000] <- Processo proc83 saindo da CPU 5.
+[665.250000] Finalização de execução do processo proc83, escrevendo na linha 100
+[665.250000] -> Processo proc8 entrando na CPU 5.
+[665.750000] <- Processo proc8 saindo da CPU 5.
+[665.750000] Finalização de execução do processo proc8, escrevendo na linha 101
+[665.750000] -> Processo proc112 entrando na CPU 5.
+[669.000000] <- Processo proc112 saindo da CPU 5.
+[669.000000] Finalização de execução do processo proc112, escrevendo na linha 102
+[669.000000] -> Processo proc3 entrando na CPU 5.
+[669.625000] <- Processo proc3 saindo da CPU 5.
+[669.625000] Finalização de execução do processo proc3, escrevendo na linha 103
+[669.625000] -> Processo proc119 entrando na CPU 5.
+[671.250000] <- Processo proc119 saindo da CPU 5.
+[671.250000] Finalização de execução do processo proc119, escrevendo na linha 104
+[671.250000] -> Processo proc125 entrando na CPU 5.
+[673.500000] <- Processo proc125 saindo da CPU 5.
+[673.500000] Finalização de execução do processo proc125, escrevendo na linha 105
+[673.500000] -> Processo proc136 entrando na CPU 5.
+[677.375000] <- Processo proc136 saindo da CPU 5.
+[677.375000] -> Processo proc136 entrando na CPU 5.
+[677.500000] <- Processo proc136 saindo da CPU 5.
+[677.500000] Finalização de execução do processo proc136, escrevendo na linha 106
+[677.500000] -> Processo proc102 entrando na CPU 5.
+[680.875000] <- Processo proc102 saindo da CPU 5.
+[680.875000] Finalização de execução do processo proc102, escrevendo na linha 107
+[680.875000] -> Processo proc148 entrando na CPU 5.
+[681.375000] <- Processo proc148 saindo da CPU 5.
+[681.375000] Finalização de execução do processo proc148, escrevendo na linha 108
+[681.375000] -> Processo proc53 entrando na CPU 5.
+[682.625000] <- Processo proc53 saindo da CPU 5.
+[682.625000] Finalização de execução do processo proc53, escrevendo na linha 109
+[682.625000] -> Processo proc105 entrando na CPU 5.
+[683.625000] <- Processo proc105 saindo da CPU 5.
+[683.625000] Finalização de execução do processo proc105, escrevendo na linha 110
+[683.625000] -> Processo proc67 entrando na CPU 5.
+[685.625000] <- Processo proc67 saindo da CPU 7.
+[685.625000] Finalização de execução do processo proc67, escrevendo na linha 111
+[685.625000] -> Processo proc97 entrando na CPU 7.
+[689.625000] <- Processo proc97 saindo da CPU 7.
+[689.625000] -> Processo proc97 entrando na CPU 7.
+[689.875000] <- Processo proc97 saindo da CPU 7.
+[689.875000] Finalização de execução do processo proc97, escrevendo na linha 112
+[689.875000] -> Processo proc25 entrando na CPU 7.
+[691.500000] <- Processo proc25 saindo da CPU 7.
+[691.500000] Finalização de execução do processo proc25, escrevendo na linha 113
+[691.500000] -> Processo proc128 entrando na CPU 7.
+[695.125000] <- Processo proc128 saindo da CPU 5.
+[695.125000] Finalização de execução do processo proc128, escrevendo na linha 114
+[695.125000] -> Processo proc96 entrando na CPU 5.
+[696.375000] <- Processo proc96 saindo da CPU 5.
+[696.375000] Finalização de execução do processo proc96, escrevendo na linha 115
+[696.375000] -> Processo proc94 entrando na CPU 5.
+[698.375000] <- Processo proc94 saindo da CPU 5.
+[698.375000] Finalização de execução do processo proc94, escrevendo na linha 116
+[698.375000] -> Processo proc80 entrando na CPU 5.
+[698.750000] <- Processo proc80 saindo da CPU 4.
+[698.750000] Finalização de execução do processo proc80, escrevendo na linha 117
+[698.750000] -> Processo proc90 entrando na CPU 4.
+[699.375000] <- Processo proc90 saindo da CPU 6.
+[699.375000] Finalização de execução do processo proc90, escrevendo na linha 118
+[699.375000] -> Processo proc35 entrando na CPU 6.
+[702.000000] <- Processo proc35 saindo da CPU 6.
+[702.000000] Finalização de execução do processo proc35, escrevendo na linha 119
+[702.000000] -> Processo proc21 entrando na CPU 6.
+[702.500000] <- Processo proc21 saindo da CPU 6.
+[702.500000] Finalização de execução do processo proc21, escrevendo na linha 120
+[702.500000] -> Processo proc5 entrando na CPU 6.
+[705.875000] <- Processo proc5 saindo da CPU 6.
+[705.875000] Finalização de execução do processo proc5, escrevendo na linha 121
+[705.875000] -> Processo proc14 entrando na CPU 6.
+[706.000000] <- Processo proc14 saindo da CPU 6.
+[706.000000] Finalização de execução do processo proc14, escrevendo na linha 122
+[706.000000] -> Processo proc79 entrando na CPU 6.
+[709.000000] <- Processo proc79 saindo da CPU 4.
+[709.000000] Finalização de execução do processo proc79, escrevendo na linha 123
+[709.000000] -> Processo proc77 entrando na CPU 4.
+[710.875000] <- Processo proc77 saindo da CPU 4.
+[710.875000] Finalização de execução do processo proc77, escrevendo na linha 124
+[710.875000] -> Processo proc81 entrando na CPU 4.
+[714.875000] <- Processo proc81 saindo da CPU 4.
+[714.875000] -> Processo proc81 entrando na CPU 4.
+[714.875000] <- Processo proc81 saindo da CPU 4.
+[714.875000] Finalização de execução do processo proc81, escrevendo na linha 125
+[714.875000] -> Processo proc107 entrando na CPU 4.
+[716.375000] <- Processo proc107 saindo da CPU 4.
+[716.375000] Finalização de execução do processo proc107, escrevendo na linha 126
+[716.375000] -> Processo proc134 entrando na CPU 4.
+[718.000000] <- Processo proc134 saindo da CPU 4.
+[718.000000] Finalização de execução do processo proc134, escrevendo na linha 127
+[718.000000] -> Processo proc32 entrando na CPU 4.
+[719.375000] <- Processo proc32 saindo da CPU 4.
+[719.375000] Finalização de execução do processo proc32, escrevendo na linha 128
+[719.375000] -> Processo proc104 entrando na CPU 4.
+[720.250000] <- Processo proc104 saindo da CPU 4.
+[720.250000] Finalização de execução do processo proc104, escrevendo na linha 129
+[720.250000] -> Processo proc108 entrando na CPU 4.
+[723.250000] <- Processo proc108 saindo da CPU 4.
+[723.250000] Finalização de execução do processo proc108, escrevendo na linha 130
+[723.250000] -> Processo proc117 entrando na CPU 4.
+[726.375000] <- Processo proc117 saindo da CPU 4.
+[726.375000] Finalização de execução do processo proc117, escrevendo na linha 131
+[726.375000] -> Processo proc70 entrando na CPU 4.
+[729.000000] <- Processo proc70 saindo da CPU 4.
+[729.000000] Finalização de execução do processo proc70, escrevendo na linha 132
+[729.000000] -> Processo proc118 entrando na CPU 4.
+[729.250000] <- Processo proc118 saindo da CPU 4.
+[729.250000] Finalização de execução do processo proc118, escrevendo na linha 133
+[729.250000] -> Processo proc24 entrando na CPU 4.
+[733.125000] <- Processo proc24 saindo da CPU 4.
+[733.125000] Finalização de execução do processo proc24, escrevendo na linha 134
+[733.125000] -> Processo proc17 entrando na CPU 4.
+[735.625000] <- Processo proc17 saindo da CPU 4.
+[735.625000] Finalização de execução do processo proc17, escrevendo na linha 135
+[735.625000] -> Processo proc111 entrando na CPU 4.
+[735.875000] <- Processo proc111 saindo da CPU 4.
+[735.875000] Finalização de execução do processo proc111, escrevendo na linha 136
+[735.875000] -> Processo proc73 entrando na CPU 4.
+[739.250000] <- Processo proc73 saindo da CPU 4.
+[739.250000] Finalização de execução do processo proc73, escrevendo na linha 137
+[739.250000] -> Processo proc4 entrando na CPU 4.
+[742.625000] <- Processo proc4 saindo da CPU 5.
+[742.625000] Finalização de execução do processo proc4, escrevendo na linha 138
+[742.625000] -> Processo proc41 entrando na CPU 5.
+[743.500000] <- Processo proc41 saindo da CPU 7.
+[743.500000] Finalização de execução do processo proc41, escrevendo na linha 139
+[743.500000] -> Processo proc56 entrando na CPU 7.
+[747.375000] <- Processo proc56 saindo da CPU 3.
+[747.375000] -> Processo proc56 entrando na CPU 3.
+[747.750000] <- Processo proc56 saindo da CPU 1.
+[747.750000] Finalização de execução do processo proc56, escrevendo na linha 140
+[747.750000] -> Processo proc86 entrando na CPU 1.
+[750.000000] <- Processo proc86 saindo da CPU 6.
+[750.000000] Finalização de execução do processo proc86, escrevendo na linha 141
+[750.000000] -> Processo proc9 entrando na CPU 6.
+[753.750000] <- Processo proc9 saindo da CPU 6.
+[753.750000] Finalização de execução do processo proc9, escrevendo na linha 142
+[753.750000] -> Processo proc114 entrando na CPU 6.
+[755.125000] <- Processo proc114 saindo da CPU 6.
+[755.125000] Finalização de execução do processo proc114, escrevendo na linha 143
+[755.125000] -> Processo proc38 entrando na CPU 6.
+[759.125000] <- Processo proc38 saindo da CPU 1.
+[759.125000] -> Processo proc38 entrando na CPU 1.
+[759.250000] <- Processo proc38 saindo da CPU 6.
+[759.250000] Finalização de execução do processo proc38, escrevendo na linha 144
+[759.250000] -> Processo proc33 entrando na CPU 6.
+[759.375000] <- Processo proc33 saindo da CPU 6.
+[759.375000] Finalização de execução do processo proc33, escrevendo na linha 145
+[759.375000] -> Processo proc137 entrando na CPU 6.
+[762.125000] <- Processo proc137 saindo da CPU 4.
+[762.125000] Finalização de execução do processo proc137, escrevendo na linha 146
+[762.125000] -> Processo proc78 entrando na CPU 4.
+[762.500000] <- Processo proc78 saindo da CPU 4.
+[762.500000] Finalização de execução do processo proc78, escrevendo na linha 147
+[762.500000] -> Processo proc27 entrando na CPU 4.
+[765.500000] <- Processo proc27 saindo da CPU 4.
+[765.500000] Finalização de execução do processo proc27, escrevendo na linha 148
+[765.500000] -> Processo proc95 entrando na CPU 4.
+[768.000000] <- Processo proc95 saindo da CPU 4.
+[768.000000] Finalização de execução do processo proc95, escrevendo na linha 149
+Mudanças de contextos: 309

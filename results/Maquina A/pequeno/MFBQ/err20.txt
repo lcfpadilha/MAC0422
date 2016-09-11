@@ -1,0 +1,69 @@
+[0.125000] Processo proc0 da linha 0 do trace chegou no sistema
+[0.125000] -> Processo proc0 entrando na CPU 7.
+[0.375000] Processo proc9 da linha 9 do trace chegou no sistema
+[1.125000] <- Processo proc0 saindo da CPU 7.
+[1.125000] -> Processo proc9 entrando na CPU 7.
+[1.500000] Processo proc7 da linha 7 do trace chegou no sistema
+[2.125000] <- Processo proc9 saindo da CPU 7.
+[2.125000] -> Processo proc7 entrando na CPU 7.
+[2.625000] Processo proc3 da linha 3 do trace chegou no sistema
+[2.750000] Processo proc4 da linha 4 do trace chegou no sistema
+[3.000000] Processo proc8 da linha 8 do trace chegou no sistema
+[3.125000] <- Processo proc7 saindo da CPU 7.
+[3.125000] -> Processo proc3 entrando na CPU 7.
+[3.500000] Processo proc2 da linha 2 do trace chegou no sistema
+[3.500000] Processo proc1 da linha 1 do trace chegou no sistema
+[4.000000] <- Processo proc3 saindo da CPU 7.
+[4.000000] -> Processo proc4 entrando na CPU 7.
+[4.500000] Processo proc5 da linha 5 do trace chegou no sistema
+[4.875000] Processo proc6 da linha 6 do trace chegou no sistema
+[5.000000] <- Processo proc4 saindo da CPU 7.
+[5.000000] -> Processo proc8 entrando na CPU 7.
+[5.625000] <- Processo proc8 saindo da CPU 7.
+[5.625000] Finalização de execução do processo proc8, escrevendo na linha 0
+[5.625000] -> Processo proc2 entrando na CPU 7.
+[6.500000] <- Processo proc2 saindo da CPU 7.
+[6.500000] -> Processo proc1 entrando na CPU 7.
+[7.375000] <- Processo proc1 saindo da CPU 7.
+[7.375000] Finalização de execução do processo proc1, escrevendo na linha 1
+[7.375000] -> Processo proc5 entrando na CPU 7.
+[8.125000] <- Processo proc5 saindo da CPU 5.
+[8.125000] Finalização de execução do processo proc5, escrevendo na linha 2
+[8.125000] -> Processo proc6 entrando na CPU 5.
+[8.500000] <- Processo proc6 saindo da CPU 5.
+[8.500000] Finalização de execução do processo proc6, escrevendo na linha 3
+[8.500000] -> Processo proc0 entrando na CPU 5.
+[9.625000] <- Processo proc0 saindo da CPU 5.
+[9.625000] Finalização de execução do processo proc0, escrevendo na linha 4
+[9.625000] -> Processo proc9 entrando na CPU 5.
+[11.625000] <- Processo proc9 saindo da CPU 7.
+[11.625000] -> Processo proc7 entrando na CPU 7.
+[13.625000] <- Processo proc7 saindo da CPU 7.
+[13.625000] -> Processo proc3 entrando na CPU 7.
+[15.625000] <- Processo proc3 saindo da CPU 7.
+[15.625000] -> Processo proc4 entrando na CPU 7.
+[17.625000] <- Processo proc4 saindo da CPU 7.
+[17.625000] -> Processo proc2 entrando na CPU 7.
+[19.500000] <- Processo proc2 saindo da CPU 7.
+[19.500000] -> Processo proc9 entrando na CPU 7.
+[22.625000] <- Processo proc9 saindo da CPU 7.
+[22.625000] -> Processo proc7 entrando na CPU 7.
+[24.000000] <- Processo proc7 saindo da CPU 7.
+[24.000000] Finalização de execução do processo proc7, escrevendo na linha 5
+[24.000000] -> Processo proc3 entrando na CPU 7.
+[26.000000] <- Processo proc3 saindo da CPU 7.
+[26.000000] Finalização de execução do processo proc3, escrevendo na linha 6
+[26.000000] -> Processo proc4 entrando na CPU 7.
+[29.000000] <- Processo proc4 saindo da CPU 7.
+[29.000000] -> Processo proc2 entrando na CPU 7.
+[31.875000] <- Processo proc2 saindo da CPU 7.
+[31.875000] -> Processo proc9 entrando na CPU 7.
+[32.500000] <- Processo proc9 saindo da CPU 7.
+[32.500000] Finalização de execução do processo proc9, escrevendo na linha 7
+[32.500000] -> Processo proc4 entrando na CPU 7.
+[35.500000] <- Processo proc4 saindo da CPU 7.
+[35.500000] Finalização de execução do processo proc4, escrevendo na linha 8
+[35.500000] -> Processo proc2 entrando na CPU 7.
+[36.125000] <- Processo proc2 saindo da CPU 7.
+[36.125000] Finalização de execução do processo proc2, escrevendo na linha 9
+Mudanças de contextos: 14
